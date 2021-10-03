@@ -51,8 +51,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content`,
+        name: `content`,
       },
     },
 
@@ -68,12 +68,19 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-plugin-netlify-cms-paths`,
+            options: {
+              cmsConfig: `/static/admin/config.yml`,
+            },
+          },
+          {
             resolve: `gatsby-remark-relative-images-v2`,
           },
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 930,
+              backgroundColor: "transparent",
             },
           },
           {

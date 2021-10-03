@@ -1,19 +1,18 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 
 const Index = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+  useEffect(() => {
+    console.log("DATA", data)
+  }, [])
   return (
     <Layout>
-      <div>
-        <h1>{data.title}</h1>
-        <p>{data.intro}</p>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-          <img src={data.image} />
-        </div>
-      </div>
+      <h1>{content.title}</h1>
+      <p>{content.intro}</p>
+      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
     </Layout>
   )
 }
