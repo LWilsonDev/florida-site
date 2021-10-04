@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import { Container } from "react-bootstrap"
 import Footer from "./footer"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 // const Layout = ({ location, title, children }) => {
 //   const rootPath = `${__PATH_PREFIX__}/`
@@ -62,7 +63,7 @@ import Footer from "./footer"
 //   )
 // }
 
-const Layout = ({ children }) => (
+const Layout = ({ children, bannerImg }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -91,6 +92,14 @@ const Layout = ({ children }) => (
             menuLinks={data.site.siteMetadata.menuLinks}
             siteTitle={data.site.siteMetadata.title}
           />
+          {bannerImg ? (
+            <Container
+              fluid
+              style={{ maxHeight: 500, overflow: "hidden", padding: 0 }}
+            >
+              <GatsbyImage image={bannerImg} alt={"Florida Beach"} />
+            </Container>
+          ) : null}
 
           <Container id="content-wrap">{children}</Container>
           <Footer />

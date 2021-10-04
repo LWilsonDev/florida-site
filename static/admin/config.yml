@@ -19,10 +19,11 @@ collections:
               widget: "hidden",
               default: "index",
             }
+          - { label: Prefix, name: prefix, widget: string }
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
-          - { label: Intro text, name: intro, widget: text }
-          - { label: Image, name: image, widget: image }
+          - { label: Banner Image, name: banner_image, widget: image }
+          - { label: Intro text, name: intro, widget: "markdown" }
       - file: "content/overview.md"
         label: "Overview"
         name: "overview"

@@ -44,7 +44,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/static/uploads`,
+        path: `${__dirname}/static/img`,
         name: "uploads",
       },
     },
@@ -106,7 +106,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`poppins:300,400,500,600,700`],
+        fonts: [`ephesis:400,600,700`],
         display: "swap",
       },
     },

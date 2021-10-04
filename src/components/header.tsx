@@ -7,7 +7,9 @@ const Header = ({ siteTitle, menuLinks }) => (
   <header>
     <Navbar expand="lg" style={{ backgroundColor: "#e3f2fd" }}>
       <Container>
-        <Navbar.Brand href="#home">{siteTitle}</Navbar.Brand>
+        <Navbar.Brand href="#home" className={"logo"}>
+          {siteTitle}
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="" id="basic-navbar-nav">
           <Nav as={"ul"} className="ms-auto ">

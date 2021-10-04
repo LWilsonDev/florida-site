@@ -2,17 +2,37 @@ import React, { useEffect } from "react"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Index = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+  const img = content.banner_image.childImageSharp.gatsbyImageData
   useEffect(() => {
     console.log("DATA", data)
   }, [])
   return (
-    <Layout>
-      <h1>{content.title}</h1>
-      <p>{content.intro}</p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
+    <Layout bannerImg={img}>
+      <div className={"text-center intro"}>
+        <p className={"prefix"}>{content.prefix}</p>
+        <h1 className={"title"}>{content.title}</h1>
+        {/* <hr
+          className={"hr"}
+          style={{
+            backgroundColor: "#4c7796",
+            width: 300,
+            height: 4,
+            margin: "40px auto",
+          }}
+        /> */}
+        <p className={"lead mt-4"}>{content.intro}</p>
+      </div>
+      <div style={{ width: "100%" }}>
+        <GatsbyImage
+          imgStyle={{ borderRadius: 15 }}
+          image={img}
+          alt={"Florida Beach"}
+        />
+      </div>
     </Layout>
   )
 }
@@ -28,9 +48,17 @@ export const query = graphql`
         node {
           childMarkdownRemark {
             frontmatter {
+              prefix
               title
               intro
-              image
+              banner_image {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
+              }
             }
           }
         }

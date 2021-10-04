@@ -30,6 +30,24 @@
   color: var(--color-primary);
 }
 
+.logo {
+  font-family: var(--fontFamily-feature);
+}
+
+.intro {
+  margin: 60px auto;
+}
+
+.prefix {
+  font-family: var(--fontFamily-feature);
+  font-size: var(--fontSize-4);
+}
+
+.title {
+  font-family: var(--fontFamily-feature);
+  font-size: var(--fontSize-7);
+}
+
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -62,6 +80,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
+  --fontFamily-feature: "Ephesis", cursive;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
@@ -106,10 +125,14 @@ html {
   font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  margin: 0;
 }
 
 body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  width: 100%;
+  margin: 0;
 }

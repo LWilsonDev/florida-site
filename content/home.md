@@ -15,7 +15,6 @@ intro: >-
 
 
   Champagne brunch upon arrival, private security 24/7
-image: /img/banner.jpeg
 banner_image: /img/banner.jpeg
 image_1: /img/2.ultimate-luxury-mansion-at-reunion-resort.jpeg
 ---
