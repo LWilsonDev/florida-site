@@ -6,12 +6,11 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Index = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
-  const img = content.banner_image.childImageSharp.gatsbyImageData
-  useEffect(() => {
-    console.log("DATA", data)
-  }, [])
+  const bannerImg = content.banner_image.childImageSharp.gatsbyImageData
+  const img1 = content.image_1.childImageSharp.gatsbyImageData
+
   return (
-    <Layout bannerImg={img}>
+    <Layout bannerImg={bannerImg}>
       <div className={"text-center intro"}>
         <p className={"prefix"}>{content.prefix}</p>
         <h1 className={"title"}>{content.title}</h1>
@@ -24,13 +23,13 @@ const Index = ({ data, location }) => {
             margin: "40px auto",
           }}
         /> */}
-        <p className={"lead mt-4"}>{content.intro}</p>
+        <p className={"lead mt-4"}>{content.subtitle}</p>
       </div>
       <div style={{ width: "100%" }}>
         <GatsbyImage
           imgStyle={{ borderRadius: 15 }}
-          image={img}
-          alt={"Florida Beach"}
+          image={img1}
+          alt={"Florida apartment"}
         />
       </div>
     </Layout>
@@ -50,8 +49,17 @@ export const query = graphql`
             frontmatter {
               prefix
               title
+              subtitle
               intro
               banner_image {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
+              }
+              image_1 {
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: BLURRED
