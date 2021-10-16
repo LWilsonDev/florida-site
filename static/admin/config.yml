@@ -17,14 +17,15 @@ collections:
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "index",
+              default: "home",
             }
           - { label: Prefix, name: prefix, widget: string }
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
           - { label: Banner Image, name: banner_image, widget: image }
-          - { label: Intro text, name: intro, widget: "markdown" }
+          - { label: Intro text, name: intro, widget: markdown }
           - { label: Image 1, name: image_1, widget: image }
+          - { label: Image 2, name: image_2, widget: image }
       - file: "content/overview.md"
         label: "Overview"
         name: "overview"

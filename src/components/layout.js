@@ -102,6 +102,7 @@ const Layout = ({ children, bannerImg }) => (
           ) : null}
 
           <Container id="content-wrap">{children}</Container>
+          <div style={{ height: "40px" }} />
           <Footer />
         </div>
       </React.Fragment>
