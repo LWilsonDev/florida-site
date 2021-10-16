@@ -37,7 +37,8 @@ collections:
               default: "overview",
             }
           - { label: Title, name: title, widget: string }
-          - { label: Intro text, name: intro, widget: text }
+          - { label: Intro text paragraph 1, name: intro_1, widget: text }
+          - { label: Intro text paragraph 2, name: intro_2, widget: text }
           - { label: Image, name: image, widget: image }
       - file: "content/gallery.md"
         label: "Gallery"

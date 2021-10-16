@@ -33,8 +33,12 @@
 }
 
 .logo {
-  font-family: var(--fontFamily-feature);
-  font-size: var(--fontSize-4) !important;
+  font-size: var(--fontSize-2) !important;
+  font-weight: 300;
+}
+
+.center {
+  align-self: center;
 }
 
 .intro {
@@ -47,8 +51,8 @@
 }
 
 .title {
-  font-family: var(--fontFamily-feature);
   font-size: var(--fontSize-7);
+  font-weight: 300;
 }
 
 .subtitle {

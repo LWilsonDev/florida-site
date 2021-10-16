@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import { graphql, Link, StaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Hr from "../components/hr"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
 import ContText from "../components/content"
 
 const Index = ({ data, location }) => {
@@ -24,7 +24,17 @@ const Index = ({ data, location }) => {
       <Container>
         <Row>
           <Col md={6}>
-            <ContText />
+            <p className={"mb-4"}>{content.intro_1}</p>
+            <p>{content.intro_2}</p>
+            <div className={"text-center mt-4"}>
+              <Button
+                className={"mx-auto info-btn  mb-4"}
+                size="lg"
+                variant="info"
+              >
+                Check Availability
+              </Button>
+            </div>
           </Col>
           <Col md={6}>
             <GatsbyImage
@@ -43,6 +53,7 @@ const Index = ({ data, location }) => {
             />
           </Col>
           <Col className="mt-2 mb-2" md={6}>
+            <h3>Features:</h3>
             <ContText />
           </Col>
         </Row>
@@ -65,6 +76,8 @@ export const query = graphql`
               prefix
               title
               subtitle
+              intro_1
+              intro_2
               banner_image {
                 childImageSharp {
                   gatsbyImageData(
