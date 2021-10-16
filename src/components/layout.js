@@ -81,13 +81,7 @@ const Layout = ({ children, bannerImg }) => (
     render={data => (
       <React.Fragment>
         <div id="page-container">
-          <Helmet
-            title={"title"}
-            meta={[
-              { name: "description", content: "Sample" },
-              { name: "keywords", content: "sample, something" },
-            ]}
-          ></Helmet>
+          <Helmet title={"title"}></Helmet>
           <Header
             menuLinks={data.site.siteMetadata.menuLinks}
             siteTitle={data.site.siteMetadata.title}

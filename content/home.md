@@ -1,5 +1,7 @@
 ---
 templateKey: home
+description: "Hello World"
+date: "2015-05-01T22:12:03.284Z"
 prefix: Your perfect
 title: Family Disney Escape
 subtitle: A luxury holiday villa in Westhaven, Florida -  for an unforgettable family vacation

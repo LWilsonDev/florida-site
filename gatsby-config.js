@@ -62,7 +62,13 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
-
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -115,23 +121,6 @@ module.exports = {
       options: {
         fonts: [`ephesis:400,600,700`],
         display: "swap",
-      },
-    },
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
       },
     },
 

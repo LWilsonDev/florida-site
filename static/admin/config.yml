@@ -23,102 +23,29 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
           - { label: Banner Image, name: banner_image, widget: image }
-          - { label: Intro text, name: intro, widget: markdown }
+          - { label: Intro text paragraph, name: intro_1, widget: string }
+          - { label: Intro text paragraph 2, name: intro_2, widget: string }
+          - { label: Features, name: features, widget: markdown }
           - { label: Image 1, name: image_1, widget: image }
           - { label: Image 2, name: image_2, widget: image }
       - file: "content/overview.md"
         label: "Overview"
         name: "overview"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "overview",
-            }
-          - { label: Title, name: title, widget: string }
-          - { label: Intro text paragraph 1, name: intro_1, widget: text }
-          - { label: Intro text paragraph 2, name: intro_2, widget: text }
-          - { label: Image, name: image, widget: image }
       - file: "content/gallery.md"
         label: "Gallery"
         name: "gallery"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "gallery",
-            }
-          - { label: Title, name: title, widget: string }
       - file: "content/map.md"
         label: "Map"
         name: "map"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "map",
-            }
-          - { label: Title, name: title, widget: string }
       - file: "content/rates.md"
         label: "Rates"
         name: "rates"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "rates",
-            }
-          - { label: Title, name: title, widget: string }
       - file: "content/reviews.md"
         label: "Reviews"
         name: "reviews"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "reviews",
-            }
-          - { label: Title, name: title, widget: string }
       - file: "content/availability.md"
         label: "Availability"
         name: "availability"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "availability",
-            }
-          - { label: Title, name: title, widget: string }
       - file: "content/contact.md"
         label: "Contact"
         name: "contact"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "contact",
-            }
-          - { label: Title, name: title, widget: string }
-
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    create: true
-    slug: "index"
-    media_folder: ""
-    public_folder: ""
-    path: "{{title}}/index"
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
