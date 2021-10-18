@@ -26,7 +26,7 @@ const Index = ({ data, location }) => {
           <Col md={6}>
             <p className={"mb-4"}>{content.intro_1}</p>
             <p>{content.intro_2}</p>
-            <div className={"text-center mt-4"}>
+            {/* <div className={"text-center mt-4"}>
               <Button
                 className={"mx-auto info-btn  mb-4"}
                 size="lg"
@@ -34,20 +34,22 @@ const Index = ({ data, location }) => {
               >
                 Check Availability
               </Button>
-            </div>
+            </div> */}
           </Col>
-          <Col md={6}>
-            <GatsbyImage
-              imgStyle={{ maxHeight: 360, borderRadius: 15, marginBottom: 15 }}
-              image={img1}
-              alt={"Florida apartment"}
-            />
+          <Col className={"pb-4"} md={6}>
+            <div style={{ maxHeight: 400, overflow: "hidden" }}>
+              <GatsbyImage
+                imgStyle={{ maxHeight: 400, borderRadius: 15 }}
+                image={img1}
+                alt={"Florida apartment"}
+              />
+            </div>
           </Col>
         </Row>
         <Row>
-          <Col className="mt-2 mb-2" md={6}>
+          <Col className="mt-2 mb-4" md={6}>
             <GatsbyImage
-              imgStyle={{ maxHeight: 400, borderRadius: 15, marginBottom: 15 }}
+              imgStyle={{ maxHeight: 400, borderRadius: 15 }}
               image={img2}
               alt={"Florida apartment"}
             />
