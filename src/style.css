@@ -55,9 +55,40 @@
   font-weight: 300;
 }
 
+.title-inner {
+  font-size: var(--fontSize-6);
+  font-weight: 300;
+}
+
 .subtitle {
   font-size: var(--fontSize-3);
   font-weight: 300;
+}
+
+.pill {
+  border: #1a202c 1px solid;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.hr {
+  background-color: #4c7796 !important;
+  width: 200px !important;
+  height: 4px !important;
+  margin: 40px auto !important;
+}
+
+.pill-text {
+  margin: 0 0 0 10px;
+}
+
+.pill-icon {
 }
 
 .html-content p,

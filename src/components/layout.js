@@ -63,7 +63,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 //   )
 // }
 
-const Layout = ({ children, bannerImg }) => (
+const Layout = ({ children, bannerImg = null }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -89,7 +89,7 @@ const Layout = ({ children, bannerImg }) => (
           {bannerImg ? (
             <Container
               fluid
-              style={{ maxHeight: 500, overflow: "hidden", padding: 0 }}
+              style={{ maxHeight: 400, overflow: "hidden", padding: 0 }}
             >
               <GatsbyImage image={bannerImg} alt={"Florida Beach"} />
             </Container>

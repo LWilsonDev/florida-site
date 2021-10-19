@@ -40,6 +40,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/netlify.js`,
+        stylesPath: `${__dirname}/src/style.css`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

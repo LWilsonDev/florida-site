@@ -83,6 +83,7 @@ export const query = graphql`
               banner_image {
                 childImageSharp {
                   gatsbyImageData(
+                    layout: FULL_WIDTH
                     placeholder: BLURRED
                     formats: [AUTO, WEBP, AVIF]
                   )
