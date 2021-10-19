@@ -13,16 +13,8 @@ module.exports = {
         link: "/overview",
       },
       {
-        name: "Map",
-        link: "/map",
-      },
-      {
         name: "Gallery",
         link: "/gallery",
-      },
-      {
-        name: "Rates",
-        link: "/rates",
       },
       {
         name: "Availability",

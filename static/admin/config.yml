@@ -73,7 +73,6 @@ collections:
                 widget: list
                 fields:
                   - { name: detail, label: Detail, widget: string }
-
       - file: "content/gallery.md"
         label: "Gallery"
         name: "gallery"

@@ -1,7 +1,6 @@
 ---
 templateKey: overview
 date: "2015-05-01T22:12:03.284Z"
-date: 2015-05-01T22:12:03.284Z
 location_description: Ideally located for a fun-packed holiday in the well
   maintained, desirable gated community of Manor at West Haven. Situated close
   to Champions Gate and only minutes away from Disney. The beach is only a short

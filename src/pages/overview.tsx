@@ -17,6 +17,8 @@ import {
 const Overview = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
   const amenities = content.amenities
+  const houseRules = content.house_rules
+  const nearby = content.nearby
 
   useEffect(() => {
     console.log("contnet", content)
@@ -52,7 +54,7 @@ const Overview = ({ data, location }) => {
           </Col>
         </Row>
         <Subtitle text="Location:" />
-        {/* HTML content? */}
+        <p>{content.location_description}</p>
         <MyMapComponent
           googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2wGHwYIoo8mm0LNaWVamI1HHWx_PMIKs&v=3.exp&libraries=geometry,drawing,places"
           loadingElement={<div style={{ height: `100%` }} />}
@@ -74,8 +76,38 @@ const Overview = ({ data, location }) => {
             )
           })}
         </Row>
+        <hr />
         <Subtitle text="House Rules:" />
-        {/* list */}
+        <Row>
+          {houseRules.map((rule, i) => {
+            return (
+              <Col md={4} sm={6}>
+                <p>{rule.house_rule}</p>
+                <ul>
+                  {rule.details.map(item => {
+                    return <li>{item.detail}</li>
+                  })}
+                </ul>
+              </Col>
+            )
+          })}
+        </Row>
+        <hr />
+        <Subtitle text="Nearby:" />
+        <Row>
+          {nearby.map((near, i) => {
+            return (
+              <Col md={4} sm={6}>
+                <p>{near.category}</p>
+                <ul>
+                  {near.details.map(item => {
+                    return <li>{item.detail}</li>
+                  })}
+                </ul>
+              </Col>
+            )
+          })}
+        </Row>
       </Container>
     </Layout>
   )
@@ -95,8 +127,21 @@ export const query = graphql`
         node {
           childMarkdownRemark {
             frontmatter {
+              location_description
               amenities {
                 amenity
+                details {
+                  detail
+                }
+              }
+              house_rules {
+                house_rule
+                details {
+                  detail
+                }
+              }
+              nearby {
+                category
                 details {
                   detail
                 }
