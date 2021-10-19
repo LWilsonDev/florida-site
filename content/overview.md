@@ -1,6 +1,5 @@
 ---
 templateKey: overview
-banner_image: /img/banner.jpeg
 date: "2015-05-01T22:12:03.284Z"
 amenities:
   - amenity: Sleeping

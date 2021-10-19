@@ -32,14 +32,17 @@ collections:
         label: "Overview"
         name: "overview"
         fields:
-          - { label: Banner Image, name: banner_image, widget: image }
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
               default: "overview",
             }
-          - { label: Location description, location_description, widget: text }
+          - {
+              label: Location description,
+              name: location_description,
+              widget: text,
+            }
           - label: "Amenities"
             name: "amenities"
             widget: list
