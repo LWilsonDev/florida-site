@@ -32,19 +32,41 @@ collections:
         label: "Overview"
         name: "overview"
         fields:
+          - { label: Banner Image, name: banner_image, widget: image }
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
               default: "overview",
             }
+          - { label: Location description, location_description, widget: text }
           - label: "Amenities"
             name: "amenities"
             widget: list
             fields:
               - { label: Amenity, name: amenity, widget: string }
-              - name: detail
-                label: Amenity detail
+              - name: details
+                label: Amenity details
+                widget: list
+                fields:
+                  - { name: detail, label: Detail, widget: string }
+          - label: "Nearby"
+            name: "nearby"
+            widget: list
+            fields:
+              - { label: Category, name: category, widget: string }
+              - name: details
+                label: Category details
+                widget: list
+                fields:
+                  - { name: detail, label: Detail, widget: string }
+          - label: "House Rules"
+            name: "house_rules"
+            widget: list
+            fields:
+              - { label: Rule, name: house_rule, widget: string }
+              - name: details
+                label: Rule details
                 widget: list
                 fields:
                   - { name: detail, label: Detail, widget: string }

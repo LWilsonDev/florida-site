@@ -16,9 +16,13 @@ import {
 
 const Overview = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
-  const bannerImg = content.banner_image.childImageSharp.gatsbyImageData
+  const amenities = content.amenities
+
+  useEffect(() => {
+    console.log("contnet", content)
+  }, [content])
   return (
-    <Layout bannerImg={bannerImg}>
+    <Layout>
       <Container className={"pt-4"}>
         <SectionTitle title="Overview" />
         <Subtitle text="At a glance:" />
@@ -56,7 +60,20 @@ const Overview = ({ data, location }) => {
           mapElement={<div style={{ height: `100%` }} />}
         />
         <Subtitle text="Amenities:" />
-        {/* list */}
+        <Row>
+          {amenities.map((amenity, i) => {
+            return (
+              <Col md={4} sm={6}>
+                <p>{amenity.amenity}</p>
+                <ul>
+                  {amenity.details.map(item => {
+                    return <li>{item.detail}</li>
+                  })}
+                </ul>
+              </Col>
+            )
+          })}
+        </Row>
         <Subtitle text="House Rules:" />
         {/* list */}
       </Container>
@@ -78,13 +95,10 @@ export const query = graphql`
         node {
           childMarkdownRemark {
             frontmatter {
-              banner_image {
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: FULL_WIDTH
-                    placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
-                  )
+              amenities {
+                amenity
+                details {
+                  detail
                 }
               }
             }
