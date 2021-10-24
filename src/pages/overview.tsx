@@ -6,13 +6,7 @@ import MyMapComponent from "../components/googleMap"
 import Layout from "../components/layout"
 import SectionTitle from "../components/sectionTitle"
 import Subtitle from "../components/subtitle"
-import {
-  FaBed,
-  FaBath,
-  FaChild,
-  FaUserFriends,
-  FaSwimmingPool,
-} from "react-icons/fa"
+import AtAGlance from "../components/atAGlance"
 
 const Overview = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
@@ -27,27 +21,7 @@ const Overview = ({ data, location }) => {
         <Subtitle text="At a glance:" />
         <Row>
           <Col>
-            <div className="pill">
-              <FaUserFriends className="pill-icon" size={"18"} />
-              <p className="pill-text">10 guests</p>
-            </div>
-            <div className="pill">
-              <FaBed className="pill-icon" size={"18"} />
-              <p className="pill-text">4 bedrooms</p>
-            </div>
-            <div className="pill">
-              <FaBath className="pill-icon" size={"18"} />
-              <p className="pill-text">3 bathrooms</p>
-            </div>
-            <div className="pill">
-              <FaSwimmingPool className="pill-icon" size={"18"} />
-              <p className="pill-text">Private pool</p>
-            </div>
-
-            <div className="pill">
-              <FaChild className="pill-icon" size={"18"} />
-              <p className="pill-text">Child-friendly</p>
-            </div>
+            <AtAGlance />
           </Col>
         </Row>
         <Subtitle text="Location:" />

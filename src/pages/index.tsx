@@ -6,12 +6,14 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Hr from "../components/hr"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import ContText from "../components/content"
+import AtAGlance from "../components/atAGlance"
 
 const Index = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
   const bannerImg = content.banner_image.childImageSharp.gatsbyImageData
   const img1 = content.image_1.childImageSharp.gatsbyImageData
   const img2 = content.image_2.childImageSharp.gatsbyImageData
+  const img3 = content.image_3.childImageSharp.gatsbyImageData
 
   return (
     <Layout bannerImg={bannerImg}>
@@ -26,15 +28,6 @@ const Index = ({ data, location }) => {
           <Col md={6}>
             <p className={"mb-4"}>{content.intro_1}</p>
             <p>{content.intro_2}</p>
-            {/* <div className={"text-center mt-4"}>
-              <Button
-                className={"mx-auto info-btn  mb-4"}
-                size="lg"
-                variant="info"
-              >
-                Check Availability
-              </Button>
-            </div> */}
           </Col>
           <Col className={"pb-4"} md={6}>
             <div style={{ maxHeight: 400, overflow: "hidden" }}>
@@ -55,8 +48,24 @@ const Index = ({ data, location }) => {
             />
           </Col>
           <Col className="mt-2 mb-2" md={6}>
+            <p className={"mb-4"}>{content.intro_3}</p>
+            <p>{content.intro_4}</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="mt-2 mb-2" md={6}>
             <h3>Features:</h3>
+            <AtAGlance />
             <ContText />
+          </Col>
+          <Col className={"pb-4"} md={6}>
+            <div style={{ maxHeight: 400, overflow: "hidden" }}>
+              <GatsbyImage
+                imgStyle={{ maxHeight: 400, borderRadius: 15 }}
+                image={img1}
+                alt={"Florida apartment"}
+              />
+            </div>
           </Col>
         </Row>
       </Container>
@@ -80,6 +89,8 @@ export const query = graphql`
               subtitle
               intro_1
               intro_2
+              intro_3
+              intro_4
               banner_image {
                 childImageSharp {
                   gatsbyImageData(
@@ -98,6 +109,14 @@ export const query = graphql`
                 }
               }
               image_2 {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
+              }
+              image_3 {
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: BLURRED

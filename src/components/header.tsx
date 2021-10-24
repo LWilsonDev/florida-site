@@ -15,7 +15,7 @@ const Header = ({ siteTitle, menuLinks }) => (
           <Nav as={"ul"} className="ms-auto ">
             {menuLinks.map(link => {
               return (
-                <Nav.Item as={"li"}>
+                <Nav.Item key={link.name} as={"li"}>
                   <Link
                     activeClassName={"active"}
                     className={"nav-link"}
