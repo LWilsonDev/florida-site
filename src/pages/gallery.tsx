@@ -7,10 +7,6 @@ import Layout from "../components/layout"
 const MyPage = ({ data }) => {
   const images = data.images.edges.map(({ node }) => ({
     ...node.childImageSharp,
-    // Use original name as caption.
-    // The `originalName` is queried in a nested field,
-    // but the `Gallery` component expects `caption` at the top level.
-    caption: node.childImageSharp.meta.originalName,
   }))
   // `images` is an array of objects with `thumb` and `full`
   return (
@@ -20,12 +16,22 @@ const MyPage = ({ data }) => {
   )
 }
 
+// query MyQuery {
+//   allFile {
+//     edges {
+//       node {
+//         id
+//         childImageSharp {
+//           gatsbyImageData
+//         }
+//       }
+//     }
+//   }
+// }
+
 export const pageQuery = graphql`
   query ImagesForGallery {
-    images: allFile(
-      filter: { relativeDirectory: { eq: "gallery" } }
-      sort: { fields: name }
-    ) {
+    images: allFile {
       edges {
         node {
           childImageSharp {
@@ -35,9 +41,6 @@ export const pageQuery = graphql`
               placeholder: BLURRED
             )
             full: gatsbyImageData(layout: FULL_WIDTH)
-            meta: fixed {
-              originalName
-            }
           }
         }
       }

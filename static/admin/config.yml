@@ -83,6 +83,14 @@ collections:
               widget: "hidden",
               default: "gallery",
             }
+          - {
+              label: "Add additional images for Gallery",
+              name: "galleryImages",
+              widget: "list",
+              summary: "{{fields.image}}",
+              field: { label: Image, name: image, widget: image },
+            }
+
       - file: "content/map.md"
         label: "Map"
         name: "map"

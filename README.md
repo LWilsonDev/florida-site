@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/346758d9-9bca-4a36-9500-f5a723e74ab8/deploy-status)](https://app.netlify.com/sites/musing-booth-904e7f/deploys)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
