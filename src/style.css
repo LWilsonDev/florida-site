@@ -17,15 +17,14 @@
   height: var(--footer-height);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
-.footer p {
-  margin-bottom: 0;
+
+.footer-link,
+p {
   color: white;
-  font-size: 0.7rem;
-}
-.footer-link {
-  color: white;
+
   font-size: 0.7rem;
 }
 .footer-link:hover {
@@ -175,7 +174,7 @@ h6 {
   --color-heading: #1a202c;
   --color-heading-black: black;
   --color-accent: #4c7796;
-  --footer-height: 5rem;
+  --footer-height: 10rem;
 }
 
 /* HTML elements */

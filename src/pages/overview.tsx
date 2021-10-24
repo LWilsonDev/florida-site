@@ -20,9 +20,6 @@ const Overview = ({ data, location }) => {
   const houseRules = content.house_rules
   const nearby = content.nearby
 
-  useEffect(() => {
-    console.log("contnet", content)
-  }, [content])
   return (
     <Layout>
       <Container className={"pt-4"}>

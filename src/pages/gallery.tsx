@@ -3,6 +3,8 @@ import React from "react"
 
 import Gallery from "@browniebroke/gatsby-image-gallery"
 import Layout from "../components/layout"
+import SectionTitle from "../components/sectionTitle"
+import Spacer from "../components/spacer"
 
 const MyPage = ({ data }) => {
   const images = data.images.edges.map(({ node }) => ({
@@ -11,23 +13,13 @@ const MyPage = ({ data }) => {
   // `images` is an array of objects with `thumb` and `full`
   return (
     <Layout>
+      <Spacer size="medium" />
+      <SectionTitle title="Gallery" />
       <Gallery images={images} />
+      <Spacer size="medium" />
     </Layout>
   )
 }
-
-// query MyQuery {
-//   allFile {
-//     edges {
-//       node {
-//         id
-//         childImageSharp {
-//           gatsbyImageData
-//         }
-//       }
-//     }
-//   }
-// }
 
 export const pageQuery = graphql`
   query ImagesForGallery {

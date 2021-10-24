@@ -6,6 +6,7 @@ import Header from "./header"
 import { Container } from "react-bootstrap"
 import Footer from "./footer"
 import { GatsbyImage } from "gatsby-plugin-image"
+import Spacer from "./spacer"
 
 // const Layout = ({ location, title, children }) => {
 //   const rootPath = `${__PATH_PREFIX__}/`
@@ -95,8 +96,10 @@ const Layout = ({ children, bannerImg = null }) => (
             </Container>
           ) : null}
 
-          <Container id="content-wrap">{children}</Container>
-          <div style={{ height: "40px" }} />
+          <Container className="mt-4" id="content-wrap">
+            {children}
+          </Container>
+          <Spacer size="medium" />
           <Footer />
         </div>
       </React.Fragment>
