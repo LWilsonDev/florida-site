@@ -32,12 +32,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/gatsby-config.js`,
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/img`,
