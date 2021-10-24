@@ -9,14 +9,3 @@ intro_2: With everything you could want right on your doorstep, you will be able
 image_1: /img/2.ultimate-luxury-mansion-at-reunion-resort.jpeg
 image_2: /img/beach1.jpeg
 ---
-
-- Tennis court
-- Jacuzzi
-- Swimming pool
-- Gym
-- Home theatre
-- Exclusive beach club 5-minute drive.
-
-Includes boat deck
-
-Champagne brunch upon arrival, private security 24/7

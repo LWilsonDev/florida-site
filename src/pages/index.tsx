@@ -49,13 +49,17 @@ const Index = ({ data, location }) => {
           </Col>
           <Col className="mt-2 mb-2" md={6}>
             <p className={"mb-4"}>{content.intro_3}</p>
-            <p>{content.intro_4}</p>
+            <p className={"mb-4"}>{content.intro_4}</p>
+            <p>{content.intro_5}</p>
           </Col>
         </Row>
         <Row>
           <Col className="mt-2 mb-2" md={6}>
             <h3>Features:</h3>
             <AtAGlance />
+            <div className="mt-2 mb-2 mx-auto">
+              <Link to={"overview"}>View property details</Link>
+            </div>
             <ContText />
           </Col>
           <Col className={"pb-4"} md={6}>
@@ -91,6 +95,7 @@ export const query = graphql`
               intro_2
               intro_3
               intro_4
+              intro_5
               banner_image {
                 childImageSharp {
                   gatsbyImageData(
