@@ -25,11 +25,11 @@ const Index = ({ data, location }) => {
       </div>
       <Container>
         <Row>
-          <Col md={6}>
+          <Col lg={6}>
             <p className={"mb-4"}>{content.intro_1}</p>
-            <p>{content.intro_2}</p>
+            <p className={"mb-4"}>{content.intro_2}</p>
           </Col>
-          <Col className={"pb-4"} md={6}>
+          <Col className={"pb-4"} lg={6}>
             <div style={{ maxHeight: 400, overflow: "hidden" }}>
               <GatsbyImage
                 imgStyle={{ maxHeight: 400, borderRadius: 15 }}
@@ -40,21 +40,21 @@ const Index = ({ data, location }) => {
           </Col>
         </Row>
         <Row>
-          <Col className="mt-2 mb-4" md={6}>
+          <Col className="mt-2 " lg={6}>
             <GatsbyImage
               imgStyle={{ maxHeight: 400, borderRadius: 15 }}
               image={img2}
               alt={"Florida apartment"}
             />
           </Col>
-          <Col className="mt-2 mb-2" md={6}>
+          <Col className="mt-2 mb-2" lg={6}>
             <p className={"mb-4"}>{content.intro_3}</p>
             <p className={"mb-4"}>{content.intro_4}</p>
             <p>{content.intro_5}</p>
           </Col>
         </Row>
         <Row>
-          <Col className="mt-2 mb-2" md={6}>
+          <Col className="mt-2 mb-2" lg={6}>
             <h3>Features:</h3>
             <AtAGlance />
             <div className="mt-2 mb-2 mx-auto">
@@ -62,11 +62,11 @@ const Index = ({ data, location }) => {
             </div>
             <ContText />
           </Col>
-          <Col className={"pb-4"} md={6}>
+          <Col className={"pb-4"} lg={6}>
             <div style={{ maxHeight: 400, overflow: "hidden" }}>
               <GatsbyImage
                 imgStyle={{ maxHeight: 400, borderRadius: 15 }}
-                image={img1}
+                image={img3}
                 alt={"Florida apartment"}
               />
             </div>

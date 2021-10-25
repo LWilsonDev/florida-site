@@ -37,7 +37,7 @@ const Overview = ({ data, location }) => {
           {amenities.map((amenity, i) => {
             return (
               <Col md={4} sm={6}>
-                <p>{amenity.amenity}</p>
+                <p className="bold">{amenity.amenity}</p>
                 <ul>
                   {amenity.details.map(item => {
                     return <li>{item.detail}</li>
@@ -53,7 +53,7 @@ const Overview = ({ data, location }) => {
           {houseRules.map((rule, i) => {
             return (
               <Col md={4} sm={6}>
-                <p>{rule.house_rule}</p>
+                <p className="bold">{rule.house_rule}</p>
                 <ul>
                   {rule.details.map(item => {
                     return <li>{item.detail}</li>
@@ -69,7 +69,7 @@ const Overview = ({ data, location }) => {
           {nearby.map((near, i) => {
             return (
               <Col md={4} sm={6}>
-                <p>{near.category}</p>
+                <p className="bold">{near.category}</p>
                 <ul>
                   {near.details.map(item => {
                     return <li>{item.detail}</li>
