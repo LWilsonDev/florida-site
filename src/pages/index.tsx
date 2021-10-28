@@ -5,8 +5,8 @@ import { graphql, Link, StaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Hr from "../components/hr"
 import { Container, Row, Col, Button } from "react-bootstrap"
-import ContText from "../components/content"
 import AtAGlance from "../components/atAGlance"
+import HomeHTMLContent from "../components/homeHTMLContent"
 
 const Index = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
@@ -58,9 +58,9 @@ const Index = ({ data, location }) => {
             <h3>Features:</h3>
             <AtAGlance />
             <div className="mt-2 mb-2 mx-auto">
-              <Link to={"overview"}>View property details</Link>
+              <Link to={"overview"}>View more property details</Link>
             </div>
-            <ContText />
+            <HomeHTMLContent />
           </Col>
           <Col className={"pb-4"} lg={6}>
             <div style={{ maxHeight: 400, overflow: "hidden" }}>

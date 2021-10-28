@@ -16,11 +16,8 @@ image_2: /img/pool_2.jpeg
 image_3: /img/pool_1.jpeg
 ---
 
-Please note:
-
-- A cleaning fee of $120 will apply.
-- You will need to add a refundable $250 security deposit.
-- Pool and spa heat can be added to your booking for $30 per night (please note that an additional trip charge of $25 will be added to switch on/off the pool heating outside of your arrival or departure date)
-- BBQ hire can be added to your booking for $70 for the first week (or part week) & $35 for any subsequent weeks. This includes the provision of gas. (Please note that an additional trip charge of $25 will be added to unlock/connect the BBQ outside of your arrival or departure date)
-- Extras such as welcome packs etc can be added for a small additional fee. Please ask for details.
-- Early check in and late check out may be available upon request; fees may apply.
+- 1 King Bedroom
+- 1 Queen Bedroom
+- 2 Twins
+- 2 en-suites
+- Close to Disney World

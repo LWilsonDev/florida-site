@@ -1,7 +1,6 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { graphql } from "gatsby"
-import { Link, StaticQuery } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { StaticQuery } from "gatsby"
 
 const Cont = ({ data }) => (
   <div
@@ -9,12 +8,12 @@ const Cont = ({ data }) => (
     dangerouslySetInnerHTML={{ __html: data }}
   ></div>
 )
-export default function ContText() {
+export default function OverviewHTMLContent() {
   return (
     <StaticQuery
       query={graphql`
-        query MyQuery {
-          markdownRemark(frontmatter: { templateKey: { eq: "home" } }) {
+        query OverviewContentQuery {
+          markdownRemark(frontmatter: { templateKey: { eq: "overview" } }) {
             html
           }
         }

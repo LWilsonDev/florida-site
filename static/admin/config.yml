@@ -47,6 +47,7 @@ collections:
               name: location_description,
               widget: text,
             }
+          - { label: Extras, name: body, widget: markdown }
           - label: "Amenities"
             name: "amenities"
             widget: list
@@ -94,47 +95,23 @@ collections:
               summary: "{{fields.image}}",
               field: { label: Image, name: image, widget: image },
             }
-
-      - file: "content/map.md"
-        label: "Map"
-        name: "map"
+      - file: "content/bookings.md"
+        label: "Bookings"
+        name: "bookings"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "map",
+              default: "bookings",
             }
-      - file: "content/rates.md"
-        label: "Rates"
-        name: "rates"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "rates",
-            }
-      - file: "content/reviews.md"
-        label: "Reviews"
-        name: "reviews"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "reviews",
-            }
-      - file: "content/availability.md"
-        label: "Availability"
-        name: "availability"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "availability",
-            }
+          - label: "Rates"
+            name: "rates"
+            widget: list
+            fields:
+              - { label: Season, name: season, widget: string }
+              - { label: Start, name: start, widget: string }
+              - { label: End, name: end, widget: string }
       - file: "content/contact.md"
         label: "Contact"
         name: "contact"

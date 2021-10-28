@@ -1,4 +1,4 @@
-import { graphql } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import React, { useEffect, useState } from "react"
 import { Col, Container, Row } from "react-bootstrap"
@@ -7,6 +7,8 @@ import Layout from "../components/layout"
 import SectionTitle from "../components/sectionTitle"
 import Subtitle from "../components/subtitle"
 import AtAGlance from "../components/atAGlance"
+import ContText from "../components/homeHTMLContent"
+import OverviewHTMLContent from "../components/overviewHTMLContent"
 
 const Overview = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
@@ -78,6 +80,12 @@ const Overview = ({ data, location }) => {
               </Col>
             )
           })}
+        </Row>
+        <hr />
+        <Row>
+          <Col className="mt-2 mb-2" lg={6}>
+            <OverviewHTMLContent />
+          </Col>
         </Row>
       </Container>
     </Layout>

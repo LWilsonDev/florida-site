@@ -17,12 +17,8 @@ module.exports = {
         link: "/gallery",
       },
       {
-        name: "Availability",
-        link: "/availability",
-      },
-      {
-        name: "Reviews",
-        link: "/reviews",
+        name: "Bookings",
+        link: "/bookings",
       },
       {
         name: "Contact",
