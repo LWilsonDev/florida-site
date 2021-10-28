@@ -112,6 +112,8 @@ collections:
               - { label: Season, name: season, widget: string }
               - { label: Start, name: start, widget: string }
               - { label: End, name: end, widget: string }
+              - { label: Nightly, name: nightly, widget: string }
+              - { label: Min nights, name: minNight, widget: string }
       - file: "content/contact.md"
         label: "Contact"
         name: "contact"
