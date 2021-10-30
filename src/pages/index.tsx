@@ -6,7 +6,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Hr from "../components/hr"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import AtAGlance from "../components/atAGlance"
-import HomeHTMLContent from "../components/homeHTMLContent"
 
 const Index = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
@@ -54,13 +53,13 @@ const Index = ({ data, location }) => {
           </Col>
         </Row>
         <Row>
-          <Col className="mt-2 mb-2" lg={6}>
+          <Col className="mt-4 mb-2" lg={6}>
             <h3>Features:</h3>
             <AtAGlance />
             <div className="mt-2 mb-2 mx-auto">
-              <Link to={"overview"}>View more property details</Link>
+              <p>{content.features} </p>
+              <Link to={"overview"}>View full property details</Link>
             </div>
-            <HomeHTMLContent />
           </Col>
           <Col className={"pb-4"} lg={6}>
             <div style={{ maxHeight: 400, overflow: "hidden" }}>
@@ -96,6 +95,7 @@ export const query = graphql`
               intro_3
               intro_4
               intro_5
+              features
               banner_image {
                 childImageSharp {
                   gatsbyImageData(

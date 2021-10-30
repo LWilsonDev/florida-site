@@ -1,15 +1,21 @@
-import { graphql } from "gatsby"
-import React from "react"
+import { graphql, Link } from "gatsby"
+import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import Table from "react-bootstrap/Table"
-import { Container } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 import SectionTitle from "../components/sectionTitle"
 import Subtitle from "../components/subtitle"
 import Hr from "../components/hr"
+import { Calendar, momentLocalizer } from "react-big-calendar"
+import moment from "moment"
+import Spacer from "../components/spacer"
 
 const Bookings = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+  const bookings = data.allCalendar.edges[0].node.childrenCalendarEvent
   const rates = content.rates
+
+  const localizer = momentLocalizer(moment)
   return (
     <Layout>
       <Container className={"pt-4"}>
@@ -40,7 +46,28 @@ const Bookings = ({ data, location }) => {
           </tbody>
         </Table>
         <Hr />
-        <Subtitle text="Availability:" />
+        <Row>
+          <Col>
+            <Subtitle text="Availability:" />
+            <p>
+              Please note, for the most up-to-date availability please{" "}
+              <Link to={"contact"}>contact us</Link> and we will respond as soon
+              as possible
+            </p>
+            <Spacer size={"medium"} />
+            <div className={"text-center"}>
+              <Calendar
+                localizer={localizer}
+                views={["month"]}
+                events={bookings}
+                startAccessor={booking => moment(booking.start.dateTime)}
+                endAccessor={booking => moment(booking.end.dateTime)}
+                style={{ height: 500 }}
+              />
+              <Spacer size={"large"} />
+            </div>
+          </Col>
+        </Row>
       </Container>
     </Layout>
   )
@@ -49,6 +76,22 @@ const Bookings = ({ data, location }) => {
 export default Bookings
 export const availQuery = graphql`
   query {
+    allCalendar {
+      edges {
+        node {
+          childrenCalendarEvent {
+            summary
+            start {
+              dateTime
+            }
+            end {
+              dateTime
+            }
+          }
+          summary
+        }
+      }
+    }
     allFile(
       filter: {
         sourceInstanceName: { eq: "content" }

@@ -24,6 +24,10 @@
   font-weight: 500;
 }
 
+.rbc-event {
+  padding: 15px 5px !important;
+}
+
 .footer-link,
 .footer-text {
   color: white;
