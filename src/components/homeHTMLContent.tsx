@@ -12,7 +12,7 @@ export default function HomeHTMLContent() {
   return (
     <StaticQuery
       query={graphql`
-        query MyQuery {
+        query HomeContentQuery {
           markdownRemark(frontmatter: { templateKey: { eq: "home" } }) {
             html
           }
