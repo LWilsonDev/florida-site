@@ -23,7 +23,7 @@ const Bookings = ({ data, location }) => {
       <Container className={"pt-4"}>
         <SectionTitle title="Booking information" />
         <div className="text-center">
-          <Button href="/contact" size="lg" variant="primary">
+          <Button className={"button"} href="/contact" size="lg">
             BOOK NOW
           </Button>
         </div>

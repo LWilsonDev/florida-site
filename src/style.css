@@ -120,6 +120,16 @@ h6 {
   border-radius: 15px;
 }
 
+.button {
+  background-color: var(--color-accent) !important;
+  border-color: var(--color-accent) !important;
+}
+
+.button:hover {
+  background-color: var(--color-accent-darker) !important;
+  border-color: var(--color-accent-darker) !important;
+}
+
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -181,6 +191,7 @@ h6 {
   --color-heading: #1a202c;
   --color-heading-black: black;
   --color-accent: #4c7796;
+  --color-accent-darker: #263e50;
   --footer-height: 10rem;
 }
 

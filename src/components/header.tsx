@@ -7,7 +7,7 @@ const Header = ({ siteTitle, menuLinks }) => (
   <header>
     <Navbar expand="lg" style={{ backgroundColor: "#e3f2fd" }}>
       <Container>
-        <Navbar.Brand href="#home" className={"logo"}>
+        <Navbar.Brand href="/" className={"logo"}>
           {siteTitle}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

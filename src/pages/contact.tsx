@@ -9,6 +9,10 @@ const Contact = ({ data, location }) => {
       <SectionTitle title="Contact us" />
       <Row className={"justify-content-md-center"}>
         <Col md={"8"} lg={"6"}>
+          <p className="lead mb-4">
+            For all booking enquiries please use the form below. We will get
+            back to you as soon as possible.
+          </p>
           <Form
             method="post"
             netlify-honeypot="bot-field"
@@ -31,7 +35,7 @@ const Contact = ({ data, location }) => {
 
               <Form.Control name="message" as="textarea" rows={3} />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button className={"button"} type="submit">
               Submit
             </Button>
           </Form>
