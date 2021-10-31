@@ -27,7 +27,6 @@ const Rates = ({ data, location }) => {
               <th>Start</th>
               <th>End</th>
               <th>Nightly</th>
-              <th>Min-nights</th>
             </tr>
           </thead>
           <tbody>
@@ -38,12 +37,12 @@ const Rates = ({ data, location }) => {
                   <td>{rate.start}</td>
                   <td>{rate.end}</td>
                   <td>{rate.nightly}</td>
-                  <td>{rate.minNight}</td>
                 </tr>
               )
             })}
           </tbody>
         </Table>
+        <p>*{content.min_nights}</p>
         <Hr />
         <OverviewHTMLContent />
         <Row>
@@ -70,12 +69,12 @@ export const availQuery = graphql`
         node {
           childMarkdownRemark {
             frontmatter {
+              min_nights
               rates {
                 season
                 start
                 end
                 nightly
-                minNight
               }
             }
           }

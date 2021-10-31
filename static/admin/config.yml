@@ -105,6 +105,9 @@ collections:
               widget: "hidden",
               default: "rates",
             }
+          - label: "Min nights"
+            name: min_nights
+            widget: string
           - label: "Rates"
             name: "rates"
             widget: list
@@ -113,7 +116,6 @@ collections:
               - { label: Start, name: start, widget: string }
               - { label: End, name: end, widget: string }
               - { label: Nightly, name: nightly, widget: string }
-              - { label: Min nights, name: minNight, widget: string }
       - file: "content/bookings.md"
         label: "Bookings"
         name: "bookings"

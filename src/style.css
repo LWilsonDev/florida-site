@@ -130,6 +130,20 @@ h6 {
   border-color: var(--color-accent-darker) !important;
 }
 
+/* override styles for calendar - there is probably a nicer way to do this... */
+.rbc-toolbar .rbc-toolbar-label {
+  color: var(--color-accent-darker) !important;
+  font-size: var(--fontSize-4);
+  padding: 10px !important;
+}
+
+.rbc-btn-group,
+.rbc-toolbar {
+  display: block !important;
+  padding: 10px 5px 5px 10px !important;
+  margin-bottom: 0 !important;
+}
+
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
