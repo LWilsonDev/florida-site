@@ -83,11 +83,17 @@
   margin-right: 10px;
   margin-bottom: 10px;
 }
+/* 
+annoying mystery css is overriding styles, so having to use !important */
 .hr {
   background-color: #4c7796 !important;
   width: 200px !important;
   height: 4px !important;
   margin: 40px auto !important;
+}
+
+.hr-subpage {
+  margin: 20px auto 40px auto !important;
 }
 
 .pill-text {
