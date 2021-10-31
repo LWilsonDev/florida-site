@@ -95,15 +95,15 @@ collections:
               summary: "{{fields.image}}",
               field: { label: Image, name: image, widget: image },
             }
-      - file: "content/bookings.md"
-        label: "Bookings"
-        name: "bookings"
+      - file: "content/rates.md"
+        label: "Rates"
+        name: "rates"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "bookings",
+              default: "rates",
             }
           - label: "Rates"
             name: "rates"
@@ -114,6 +114,19 @@ collections:
               - { label: End, name: end, widget: string }
               - { label: Nightly, name: nightly, widget: string }
               - { label: Min nights, name: minNight, widget: string }
+      - file: "content/bookings.md"
+        label: "Bookings"
+        name: "bookings"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "bookings",
+            }
+          - label: "Booking info"
+            name: "booking_info"
+            widget: text
       - file: "content/contact.md"
         label: "Contact"
         name: "contact"

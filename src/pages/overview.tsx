@@ -7,7 +7,6 @@ import Layout from "../components/layout"
 import SectionTitle from "../components/sectionTitle"
 import Subtitle from "../components/subtitle"
 import AtAGlance from "../components/atAGlance"
-import ContText from "../components/homeHTMLContent"
 import OverviewHTMLContent from "../components/overviewHTMLContent"
 
 const Overview = ({ data, location }) => {
