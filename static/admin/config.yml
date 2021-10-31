@@ -127,13 +127,3 @@ collections:
           - label: "Booking info"
             name: "booking_info"
             widget: text
-      - file: "content/contact.md"
-        label: "Contact"
-        name: "contact"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "contact",
-            }
