@@ -47,7 +47,7 @@ collections:
               name: location_description,
               widget: text,
             }
-          - { label: Extras, name: body, widget: markdown }
+
           - label: "Amenities"
             name: "amenities"
             widget: list
@@ -55,16 +55,6 @@ collections:
               - { label: Amenity, name: amenity, widget: string }
               - name: details
                 label: Amenity details
-                widget: list
-                fields:
-                  - { name: detail, label: Detail, widget: string }
-          - label: "Nearby"
-            name: "nearby"
-            widget: list
-            fields:
-              - { label: Category, name: category, widget: string }
-              - name: details
-                label: Category details
                 widget: list
                 fields:
                   - { name: detail, label: Detail, widget: string }
@@ -78,6 +68,17 @@ collections:
                 widget: list
                 fields:
                   - { name: detail, label: Detail, widget: string }
+          - label: "Nearby"
+            name: "nearby"
+            widget: list
+            fields:
+              - { label: Category, name: category, widget: string }
+              - name: details
+                label: Category details
+                widget: list
+                fields:
+                  - { name: detail, label: Detail, widget: string }
+          - { label: Extras, name: body, widget: markdown }
       - file: "content/gallery.md"
         label: "Gallery"
         name: "gallery"
