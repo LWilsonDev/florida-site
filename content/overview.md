@@ -17,19 +17,23 @@ amenities:
       - detail: 2 en-suites
       - detail: 1 shared bathroom
       - detail: garden tub
-  - amenity: Laundry
-    details:
-      - detail: 1 washing machine
-      - detail: 1 tumble dryer
-  - amenity: Dining
-    details:
-      - detail: Large open-plan dining room
-      - detail: Breakfast area
   - amenity: Entertainment
     details:
       - detail: Outdoor swimming pool
       - detail: Pool table
       - detail: HD TV
+  - amenity: Telly
+    details:
+      - detail: 1 big telly
+      - detail: 1 medium telly
+      - detail: 1 small
+  - amenity: Dining
+    details:
+      - detail: Large open-plan dining room
+      - detail: Breakfast area
+  - amenity: test
+    details:
+      - detail: test detail
 nearby:
   - category: Attractions
     details:
@@ -59,12 +63,11 @@ house_rules:
       - detail: Check in after 2pm
       - detail: Check out by 11am
 ---
-
 Please note:
 
-- A cleaning fee of $120 will apply.
-- You will need to add a refundable $250 security deposit.
-- Pool and spa heat can be added to your booking for $30 per night (please note that an additional trip charge of $25 will be added to switch on/off the pool heating outside of your arrival or departure date)
-- BBQ hire can be added to your booking for $70 for the first week (or part week) & $35 for any subsequent weeks. This includes the provision of gas. (Please note that an additional trip charge of $25 will be added to unlock/connect the BBQ outside of your arrival or departure date)
-- Extras such as welcome packs etc can be added for a small additional fee. Please ask for details.
-- Early check in and late check out may be available upon request; fees may apply.
+* A cleaning fee of $120 will apply.
+* You will need to add a refundable $250 security deposit.
+* Pool and spa heat can be added to your booking for $30 per night (please note that an additional trip charge of $25 will be added to switch on/off the pool heating outside of your arrival or departure date)
+* BBQ hire can be added to your booking for $70 for the first week (or part week) & $35 for any subsequent weeks. This includes the provision of gas. (Please note that an additional trip charge of $25 will be added to unlock/connect the BBQ outside of your arrival or departure date)
+* Extras such as welcome packs etc can be added for a small additional fee. Please ask for details.
+* Early check in and late check out may be available upon request; fees may apply.
