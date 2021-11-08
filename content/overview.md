@@ -1,6 +1,6 @@
 ---
 templateKey: overview
-date: "2015-05-01T22:12:03.284Z"
+date: 2015-05-01T22:12:03.284Z
 location_description: Ideally located for a fun-packed holiday in the well
   maintained, desirable gated community of Manor at West Haven. Situated close
   to Champions Gate and only minutes away from Disney. The beach is only a short
@@ -11,7 +11,7 @@ amenities:
       - detail: 4 bedrooms
       - detail: 1 King
       - detail: 1 Queen
-      - detail: 2 twin rooms
+      - detail: 2 twins
   - amenity: Bathrooms
     details:
       - detail: 2 en-suites
@@ -38,14 +38,14 @@ nearby:
       - detail: Museums
       - detail: Sight-seeing
       - detail: Aquarium
-  - category: Eating out
-    details:
-      - detail: Restaurants - 1 mile
-      - detail: Bars - 1 mile
   - category: Shopping
     details:
       - detail: Supermarket - 1 mile
       - detail: Designer outlet - 10 miles
+  - category: Eating out
+    details:
+      - detail: Restaurants - 1 mile
+      - detail: Bars - 1 mile
 house_rules:
   - house_rule: BBQ's and fires
     details:
