@@ -1,67 +1,81 @@
 ---
 templateKey: overview
 date: 2015-05-01T22:12:03.284Z
-location_description: Ideally located for a fun-packed holiday in the well
-  maintained, desirable gated community of Manor at West Haven. Situated close
-  to Champions Gate and only minutes away from Disney. The beach is only a short
-  drive away, and there are plenty of fabulous restaurants and bars in the area.
+location_description: >-
+  The property is located on the highly desirable Manor at West Haven gated
+  community, just minutes from the restaurants, bars, golf and amenities of
+  Champions Gate and a 15 minute drive from Disney’s attractions.
+
+
+  There are several flexible airport options. Orlando International Airport is a 35 minute drive, Tampa International Airport just over 1 hour and Miami approximately a 4 hour drive.
 amenities:
   - amenity: Sleeping
     details:
       - detail: 4 bedrooms
-      - detail: 1 King
-      - detail: 1 Queen
-      - detail: 2 twins
+      - detail: 2 King Master Suites
+      - detail: 2 Themed Twins
   - amenity: Bathrooms
     details:
-      - detail: 2 en-suites
-      - detail: 1 shared bathroom
-      - detail: garden tub
+      - detail: 2 Dual vanity en-suites
+      - detail: 1 shared bathroom (with pool access)
+      - detail: Oversized baths & walk-in showers
+  - amenity: Laundry
+    details:
+      - detail: Bedlinen & towels provided
+      - detail: 1 Washing machine
+      - detail: 1 Tumble dryer
+  - amenity: Kitchen
+    details:
+      - detail: Stainless steel appliances
+      - detail: Dishwasher
+      - detail: Microwave
+      - detail: Coffee machine
   - amenity: Entertainment
     details:
-      - detail: Outdoor swimming pool
-      - detail: Pool table
-      - detail: HD TV
-  - amenity: Telly
+      - detail: Heated pool & spa
+      - detail: Games Room (pool, air hockey, bar)
+      - detail: x6 Roku TVs (one outside)
+      - detail: Tennis Court
+  - amenity: Family
     details:
-      - detail: 1 big telly
-      - detail: 1 medium telly
-      - detail: 1 small
-  - amenity: Dining
-    details:
-      - detail: Large open-plan dining room
-      - detail: Breakfast area
-  - amenity: test
-    details:
-      - detail: test detail
+      - detail: Travel cot
+      - detail: High chair
+      - detail: Buggy
+      - detail: Children's play area
 nearby:
-  - category: Attractions
+  - category: Theme Parks
     details:
       - detail: Disney World
-      - detail: Beach
-      - detail: Museums
-      - detail: Sight-seeing
-      - detail: Aquarium
-  - category: Shopping
+      - detail: Universal Studios
+      - detail: Seaworld
+      - detail: Busch Gardens
+      - detail: Kennedy Space Centre
+  - category: Other Attractions
     details:
-      - detail: Supermarket - 1 mile
-      - detail: Designer outlet - 10 miles
-  - category: Eating out
+      - detail: Kissimmee
+      - detail: Golf
+      - detail: International Drive
+      - detail: Airboat rides
+      - detail: Beach (1 Hour)
+  - category: Shopping & Eating Out
     details:
-      - detail: Restaurants - 1 mile
-      - detail: Bars - 1 mile
+      - detail: Supermarket (1.5 miles)
+      - detail: Restaurants & Bars (2 miles)
+      - detail: Shopping Mall (4 miles)
+      - detail: Designer Outlet (15 miles)
 house_rules:
-  - house_rule: BBQ's and fires
+  - house_rule: Not Permitted
     details:
-      - detail: Please use the BBQ provided
-      - detail: Open fires are prohibited
-  - house_rule: Pets
+      - detail: Smoking
+      - detail: Pets
+  - house_rule: BBQs & Fires
     details:
-      - detail: Sorry - no pets allowed
+      - detail: BBQ available for hire
+      - detail: Open fires prohibited
   - house_rule: Check-in/out
     details:
-      - detail: Check in after 2pm
-      - detail: Check out by 11am
+      - detail: Check in after 4pm
+      - detail: Check out by 10am
 ---
 Please note:
 
