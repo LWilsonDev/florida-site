@@ -2,7 +2,7 @@
 templateKey: rates
 min_nights: Minimum booking of 5 nights
 rates:
-  - season: 2021 Special
+  - season: 2022 Special
     start: 1st Oct
     end: 20th Nov
     nightly: $160
