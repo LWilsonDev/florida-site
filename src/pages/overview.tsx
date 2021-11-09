@@ -65,7 +65,7 @@ const Overview = ({ data, location }) => {
           })}
         </Row>
         <hr />
-        <Subtitle text="House Rules:" />
+        <Subtitle text="House rules:" />
         <Row>
           {houseRules.map((rule, i) => {
             return (
