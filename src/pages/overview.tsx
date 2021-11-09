@@ -53,7 +53,7 @@ const Overview = ({ data, location }) => {
         <Row>
           {nearby.map((near, i) => {
             return (
-              <Col md={4} sm={6}>
+              <Col md={4} sm={6} className={"pb-2"}>
                 <p className="bold">{near.category}</p>
                 <ul>
                   {near.details.map(item => {
@@ -69,7 +69,7 @@ const Overview = ({ data, location }) => {
         <Row>
           {houseRules.map((rule, i) => {
             return (
-              <Col md={4} sm={6}>
+              <Col md={4} sm={6} className={"pb-2"}>
                 <p className="bold">{rule.house_rule}</p>
                 <ul>
                   {rule.details.map(item => {
