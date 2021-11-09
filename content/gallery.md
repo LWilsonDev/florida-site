@@ -4,7 +4,6 @@ galleryImages:
   - /img/pool_1.jpeg
   - /img/pool_2.jpeg
   - /img/front_1.jpeg
-  - /img/front_2.jpeg
   - /img/capture25.png
   - /img/capture26.png
   - /img/capture18.png
