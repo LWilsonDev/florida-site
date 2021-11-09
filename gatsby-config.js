@@ -113,19 +113,19 @@ module.exports = {
     },
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-google-calendar`,
-      options: {
-        calendarIds: [
-          "trpnc55gk43d2onm08rt90nbmnh2uv9t@import.calendar.google.com",
-        ],
-        // options to retrieve the next 10 upcoming events
-        timeMin: new Date().toISOString(),
-        maxResults: 10,
-        singleEvents: true,
-        orderBy: "startTime",
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-google-calendar`,
+    //   options: {
+    //     calendarIds: [
+    //       "trpnc55gk43d2onm08rt90nbmnh2uv9t@import.calendar.google.com",
+    //     ],
+    //     // options to retrieve the next 10 upcoming events
+    //     timeMin: new Date().toISOString(),
+    //     maxResults: 10,
+    //     singleEvents: true,
+    //     orderBy: "startTime",
+    //   },
+    // },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
