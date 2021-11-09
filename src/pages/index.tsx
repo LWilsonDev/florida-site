@@ -16,11 +16,15 @@ const Index = ({ data, location }) => {
 
   return (
     <Layout bannerImg={bannerImg}>
-      <div className={"text-center intro"}>
+      <div className={"text-center intro "}>
         <p className={"prefix"}>{content.prefix}</p>
         <h1 className={"title"}>{content.title}</h1>
         <Hr />
-        <h2 className={"mt-4 subtitle"}>{content.subtitle}</h2>
+        <Row className={"justify-content-md-center"}>
+          <Col md={"8"} lg={"7"}>
+            <h2 className={"mt-4 subtitle"}>{content.subtitle}</h2>
+          </Col>
+        </Row>
       </div>
       <Container>
         <Row>
@@ -54,10 +58,9 @@ const Index = ({ data, location }) => {
         </Row>
         <Row>
           <Col className="mt-4 mb-2" lg={6}>
-            <h3>Features:</h3>
+            <h3>Key features:</h3>
             <AtAGlance />
             <div className="mt-2 mb-2 mx-auto">
-              <p>{content.features} </p>
               <Link to={"overview"}>View full property details</Link>
             </div>
           </Col>
@@ -95,7 +98,6 @@ export const query = graphql`
               intro_3
               intro_4
               intro_5
-              features
               banner_image {
                 childImageSharp {
                   gatsbyImageData(

@@ -41,5 +41,4 @@ image_1: /img/front_1.jpeg
 image_2: /img/pool_2.jpeg
 date: 2015-05-01T22:12:03.284Z
 image_3: /img/capture24.png
-features: Please remove this text
 ---

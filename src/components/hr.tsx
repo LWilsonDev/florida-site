@@ -1,5 +1,5 @@
 import React from "react"
 
-export default function Hr({ className }) {
+export default function Hr({ className = "" }) {
   return <hr className={`hr ${className}`} />
 }

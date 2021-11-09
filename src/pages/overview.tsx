@@ -37,10 +37,26 @@ const Overview = ({ data, location }) => {
         <Row>
           {amenities.map((amenity, i) => {
             return (
-              <Col md={4} sm={6}>
+              <Col md={4} sm={6} className={"pb-2"}>
                 <p className="bold">{amenity.amenity}</p>
                 <ul>
                   {amenity.details.map(item => {
+                    return <li>{item.detail}</li>
+                  })}
+                </ul>
+              </Col>
+            )
+          })}
+        </Row>
+        <hr />
+        <Subtitle text="What's nearby:" />
+        <Row>
+          {nearby.map((near, i) => {
+            return (
+              <Col md={4} sm={6}>
+                <p className="bold">{near.category}</p>
+                <ul>
+                  {near.details.map(item => {
                     return <li>{item.detail}</li>
                   })}
                 </ul>
@@ -63,28 +79,6 @@ const Overview = ({ data, location }) => {
               </Col>
             )
           })}
-        </Row>
-        <hr />
-        <Subtitle text="Nearby:" />
-        <Row>
-          {nearby.map((near, i) => {
-            return (
-              <Col md={4} sm={6}>
-                <p className="bold">{near.category}</p>
-                <ul>
-                  {near.details.map(item => {
-                    return <li>{item.detail}</li>
-                  })}
-                </ul>
-              </Col>
-            )
-          })}
-        </Row>
-        <hr />
-        <Row>
-          <Col className="mt-2 mb-2" lg={6}>
-            <OverviewHTMLContent />
-          </Col>
         </Row>
       </Container>
     </Layout>

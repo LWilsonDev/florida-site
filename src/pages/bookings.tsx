@@ -6,18 +6,18 @@ import { Button, Col, Container, Row } from "react-bootstrap"
 import SectionTitle from "../components/sectionTitle"
 import Subtitle from "../components/subtitle"
 
-import { Calendar, momentLocalizer } from "react-big-calendar"
+//import { Calendar, momentLocalizer } from "react-big-calendar"
 import moment from "moment-timezone"
 import Spacer from "../components/spacer"
 
 const Bookings = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
 
-  const bookings = data.allCalendar.edges[0].node.childrenCalendarEvent
+  //const bookings = data.allCalendar.edges[0].node.childrenCalendarEvent
 
   moment.tz.setDefault("GMT")
 
-  const localizer = momentLocalizer(moment)
+  //const localizer = momentLocalizer(moment)
   return (
     <Layout>
       <Container className={"pt-4"}>
@@ -32,18 +32,18 @@ const Bookings = ({ data, location }) => {
           <Col>
             <Subtitle text="Availability:" />
             <p>
-              {content.booking_info} <Link to={"contact"}>contact us</Link>
+              {content.booking_info} <Link to={"/contact"}>contact us</Link>
             </p>
             <Spacer size={"medium"} />
             <div className={"text-center"}>
-              <Calendar
+              {/* <Calendar
                 localizer={localizer}
                 views={["month"]}
                 events={bookings}
                 startAccessor={booking => moment(booking.start.dateTime)}
                 endAccessor={booking => moment(booking.end.dateTime)}
                 style={{ height: 500 }}
-              />
+              /> */}
               <Spacer size={"large"} />
             </div>
           </Col>
@@ -56,22 +56,22 @@ const Bookings = ({ data, location }) => {
 export default Bookings
 export const availQuery = graphql`
   query {
-    allCalendar {
-      edges {
-        node {
-          childrenCalendarEvent {
-            summary
-            start {
-              dateTime
-            }
-            end {
-              dateTime
-            }
-          }
-          summary
-        }
-      }
-    }
+    # allCalendar {
+    #   edges {
+    #     node {
+    #       childrenCalendarEvent {
+    #         summary
+    #         start {
+    #           dateTime
+    #         }
+    #         end {
+    #           dateTime
+    #         }
+    #       }
+    #       summary
+    #     }
+    #   }
+    # }
     allFile(
       filter: {
         sourceInstanceName: { eq: "content" }

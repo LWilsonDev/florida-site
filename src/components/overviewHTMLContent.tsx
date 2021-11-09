@@ -13,7 +13,7 @@ export default function OverviewHTMLContent() {
     <StaticQuery
       query={graphql`
         query OverviewContentQuery {
-          markdownRemark(frontmatter: { templateKey: { eq: "overview" } }) {
+          markdownRemark(frontmatter: { templateKey: { eq: "rates" } }) {
             html
           }
         }

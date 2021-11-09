@@ -69,6 +69,7 @@
 .subtitle {
   font-size: var(--fontSize-3);
   font-weight: 300;
+  line-height: var(--lineHeight-relaxed);
 }
 
 .pill {

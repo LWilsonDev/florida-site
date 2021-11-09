@@ -31,7 +31,6 @@ collections:
           - { label: Image 1, name: image_1, widget: image }
           - { label: Image 2, name: image_2, widget: image }
           - { label: Image 3, name: image_3, widget: image }
-          - { label: Features, name: features, widget: text }
       - file: "content/overview.md"
         label: "Overview"
         name: "overview"
@@ -58,16 +57,6 @@ collections:
                 widget: list
                 fields:
                   - { name: detail, label: Detail, widget: string }
-          - label: "House Rules"
-            name: "house_rules"
-            widget: list
-            fields:
-              - { label: Rule, name: house_rule, widget: string }
-              - name: details
-                label: Rule details
-                widget: list
-                fields:
-                  - { name: detail, label: Detail, widget: string }
           - label: "Nearby"
             name: "nearby"
             widget: list
@@ -78,7 +67,17 @@ collections:
                 widget: list
                 fields:
                   - { name: detail, label: Detail, widget: string }
-          - { label: Extras, name: body, widget: markdown }
+          - label: "House Rules"
+            name: "house_rules"
+            widget: list
+            fields:
+              - { label: Rule, name: house_rule, widget: string }
+              - name: details
+                label: Rule details
+                widget: list
+                fields:
+                  - { name: detail, label: Detail, widget: string }
+
       - file: "content/gallery.md"
         label: "Gallery"
         name: "gallery"
@@ -117,6 +116,7 @@ collections:
               - { label: Start, name: start, widget: string }
               - { label: End, name: end, widget: string }
               - { label: Nightly, name: nightly, widget: string }
+          - { label: Extras, name: body, widget: markdown }
       - file: "content/bookings.md"
         label: "Bookings"
         name: "bookings"
