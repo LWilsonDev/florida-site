@@ -4,7 +4,7 @@ prefix: Your perfect
 title: Family Disney Escape
 subtitle: A luxury holiday villa with private pool & spa in West Haven, Florida
   - for an unforgettable family vacation
-banner_image: /img/pool_2.jpeg
+banner_image: /img/capture-35.png
 intro_1: Luxurious family villa boasting an oversized, private pool & spa
   overlooking a beautiful conservation area. A south-west facing outlook offers
   sunshine from early till late. The property is just 15 minutes from Disney’s
