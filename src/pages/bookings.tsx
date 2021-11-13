@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby"
-import React, { useEffect } from "react"
+import React from "react"
 import Layout from "../components/layout"
 
 import { Button, Col, Container, Row } from "react-bootstrap"
@@ -9,16 +9,14 @@ import Subtitle from "../components/subtitle"
 import Spacer from "../components/spacer"
 import ContentWithMargin from "../components/contentWithMargin"
 import loadable from "@loadable/component"
+const LoadedCal = loadable(() => import("../components/Calendar"))
 
-const FullCalendar = loadable(() => import("@fullcalendar/react")) // must go before plugins
-const dayGridPlugin = loadable(() => import("@fullcalendar/daygrid"))
-const googleCalendarPlugin = loadable(
-  () => import("@fullcalendar/google-calendar")
-)
+function MyCalendar() {
+  return <LoadedCal />
+}
 
 const Bookings = ({ data }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
-  const apiKey = process.env.GATSBY_GOOGLE_CAL_API
 
   return (
     <Layout title="Bookings">
@@ -39,22 +37,7 @@ const Bookings = ({ data }) => {
               </p>
               <Spacer size={"medium"} />
               <div className={"text-center"}>
-                {apiKey ? (
-                  <FullCalendar
-                    plugins={[dayGridPlugin, googleCalendarPlugin]}
-                    initialView="dayGridMonth"
-                    dayHeaderClassNames={"customDates"}
-                    googleCalendarApiKey={apiKey}
-                    events={{
-                      googleCalendarId:
-                        "trpnc55gk43d2onm08rt90nbmnh2uv9t@import.calendar.google.com",
-                    }}
-                    displayEventTime={false}
-                    eventDisplay={"block"}
-                    eventTextColor={"#4c7796"}
-                    eventColor={"#4c7796"}
-                  />
-                ) : null}
+                <MyCalendar />
 
                 <Spacer size={"large"} />
               </div>
