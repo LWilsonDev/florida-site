@@ -8,13 +8,15 @@ import Subtitle from "../components/subtitle"
 
 import Spacer from "../components/spacer"
 import ContentWithMargin from "../components/contentWithMargin"
-import { Helmet } from "react-helmet"
+import loadable from "@loadable/component"
 
-import FullCalendar from "@fullcalendar/react" // must go before plugins
-import dayGridPlugin from "@fullcalendar/daygrid" // a plugin!
-import googleCalendarPlugin from "@fullcalendar/google-calendar"
+const FullCalendar = loadable(() => import("@fullcalendar/react")) // must go before plugins
+const dayGridPlugin = loadable(() => import("@fullcalendar/daygrid"))
+const googleCalendarPlugin = loadable(
+  () => import("@fullcalendar/google-calendar")
+)
 
-const Bookings = ({ data, location }) => {
+const Bookings = ({ data }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
   const apiKey = process.env.GATSBY_GOOGLE_CAL_API
 
@@ -37,20 +39,23 @@ const Bookings = ({ data, location }) => {
               </p>
               <Spacer size={"medium"} />
               <div className={"text-center"}>
-                <FullCalendar
-                  plugins={[dayGridPlugin, googleCalendarPlugin]}
-                  initialView="dayGridMonth"
-                  dayHeaderClassNames={"customDates"}
-                  googleCalendarApiKey={apiKey}
-                  events={{
-                    googleCalendarId:
-                      "trpnc55gk43d2onm08rt90nbmnh2uv9t@import.calendar.google.com",
-                  }}
-                  displayEventTime={false}
-                  eventDisplay={"block"}
-                  eventTextColor={"#4c7796"}
-                  eventColor={"#4c7796"}
-                />
+                {apiKey ? (
+                  <FullCalendar
+                    plugins={[dayGridPlugin, googleCalendarPlugin]}
+                    initialView="dayGridMonth"
+                    dayHeaderClassNames={"customDates"}
+                    googleCalendarApiKey={apiKey}
+                    events={{
+                      googleCalendarId:
+                        "trpnc55gk43d2onm08rt90nbmnh2uv9t@import.calendar.google.com",
+                    }}
+                    displayEventTime={false}
+                    eventDisplay={"block"}
+                    eventTextColor={"#4c7796"}
+                    eventColor={"#4c7796"}
+                  />
+                ) : null}
+
                 <Spacer size={"large"} />
               </div>
             </Col>

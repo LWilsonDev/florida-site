@@ -12,6 +12,7 @@
     "@fullcalendar/daygrid": "^5.10.1",
     "@fullcalendar/google-calendar": "^5.10.1",
     "@fullcalendar/react": "^5.10.1",
+    "@loadable/component": "^5.15.0",
     "@types/react-helmet": "^6.1.4",
     "bootstrap": "^5.1.1",
     "gatsby": "^3.14.3",

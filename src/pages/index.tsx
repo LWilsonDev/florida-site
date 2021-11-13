@@ -27,7 +27,6 @@ const Index = ({ data, location }) => {
         <StaticImage
           src="../../static/img/banner.jpg"
           alt={"Apartment pool"}
-          height={BANNER_HEIGHT}
           layout={"fullWidth"}
           transformOptions={{ fit: "inside" }}
         />
