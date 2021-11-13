@@ -1,8 +1,6 @@
 import * as React from "react"
-import { Helmet } from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
-import { Container } from "react-bootstrap"
 import Footer from "./footer"
 import Spacer from "./spacer"
 import SEO from "./seo"
