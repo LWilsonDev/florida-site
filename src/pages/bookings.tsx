@@ -16,7 +16,7 @@ import googleCalendarPlugin from "@fullcalendar/google-calendar"
 
 const Bookings = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
-  const apiKey = process.env.GOOGLE_CAL_API
+  const apiKey = process.env.GATSBY_GOOGLE_CAL_API
 
   return (
     <Layout title="Bookings">
