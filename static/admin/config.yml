@@ -22,12 +22,18 @@ collections:
           - { label: Prefix, name: prefix, widget: string }
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
-          - { label: Banner Image, name: banner_image, widget: image }
+          - {
+              label: Banner Image,
+              hint: Image format must be jpg and file must be named 'banner.jpg',
+              name: banner_image,
+              widget: image,
+            }
           - { label: Intro text paragraph, name: intro_1, widget: text }
           - { label: Intro text paragraph 2, name: intro_2, widget: text }
           - { label: Intro text paragraph 3, name: intro_3, widget: text }
           - { label: Intro text paragraph 4, name: intro_4, widget: text }
           - { label: Intro text paragraph 5, name: intro_5, widget: text }
+          - { label: Intro text paragraph 6, name: intro_6, widget: text }
           - { label: Image 1, name: image_1, widget: image }
           - { label: Image 2, name: image_2, widget: image }
           - { label: Image 3, name: image_3, widget: image }
@@ -81,6 +87,7 @@ collections:
       - file: "content/gallery.md"
         label: "Gallery"
         name: "gallery"
+        hint: "All images across the site will be added by default. Add additional photos here"
         fields:
           - {
               label: "Template Key",

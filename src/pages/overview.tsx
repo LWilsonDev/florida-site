@@ -8,6 +8,7 @@ import SectionTitle from "../components/sectionTitle"
 import Subtitle from "../components/subtitle"
 import AtAGlance from "../components/atAGlance"
 import OverviewHTMLContent from "../components/overviewHTMLContent"
+import ContentWithMargin from "../components/contentWithMargin"
 
 const Overview = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
@@ -17,70 +18,72 @@ const Overview = ({ data, location }) => {
 
   return (
     <Layout>
-      <Container className={"pt-4"}>
-        <SectionTitle title="Overview" />
-        <Subtitle text="At a glance:" />
-        <Row>
-          <Col>
-            <AtAGlance />
-          </Col>
-        </Row>
-        <Subtitle text="Location:" />
-        <p>{content.location_description}</p>
-        <MyMapComponent
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2wGHwYIoo8mm0LNaWVamI1HHWx_PMIKs&v=3.exp&libraries=geometry,drawing,places"
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `400px` }} />}
-          mapElement={<div style={{ height: `100%` }} />}
-        />
-        <Subtitle text="Amenities:" />
-        <Row>
-          {amenities.map((amenity, i) => {
-            return (
-              <Col md={4} sm={6} className={"pb-2"}>
-                <p className="bold">{amenity.amenity}</p>
-                <ul>
-                  {amenity.details.map(item => {
-                    return <li>{item.detail}</li>
-                  })}
-                </ul>
-              </Col>
-            )
-          })}
-        </Row>
-        <hr />
-        <Subtitle text="What's nearby:" />
-        <Row>
-          {nearby.map((near, i) => {
-            return (
-              <Col md={4} sm={6} className={"pb-2"}>
-                <p className="bold">{near.category}</p>
-                <ul>
-                  {near.details.map(item => {
-                    return <li>{item.detail}</li>
-                  })}
-                </ul>
-              </Col>
-            )
-          })}
-        </Row>
-        <hr />
-        <Subtitle text="House rules:" />
-        <Row>
-          {houseRules.map((rule, i) => {
-            return (
-              <Col md={4} sm={6} className={"pb-2"}>
-                <p className="bold">{rule.house_rule}</p>
-                <ul>
-                  {rule.details.map(item => {
-                    return <li>{item.detail}</li>
-                  })}
-                </ul>
-              </Col>
-            )
-          })}
-        </Row>
-      </Container>
+      <ContentWithMargin>
+        <Container className={"pt-4"}>
+          <SectionTitle title="Overview" />
+          <Subtitle text="At a glance:" />
+          <Row>
+            <Col>
+              <AtAGlance />
+            </Col>
+          </Row>
+          <Subtitle text="Location:" />
+          <p>{content.location_description}</p>
+          <MyMapComponent
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2wGHwYIoo8mm0LNaWVamI1HHWx_PMIKs&v=3.exp&libraries=geometry,drawing,places"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `400px` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
+          <Subtitle text="Amenities:" />
+          <Row>
+            {amenities.map((amenity, i) => {
+              return (
+                <Col md={4} sm={6} className={"pb-2"}>
+                  <p className="bold">{amenity.amenity}</p>
+                  <ul>
+                    {amenity.details.map(item => {
+                      return <li>{item.detail}</li>
+                    })}
+                  </ul>
+                </Col>
+              )
+            })}
+          </Row>
+          <hr />
+          <Subtitle text="What's nearby:" />
+          <Row>
+            {nearby.map((near, i) => {
+              return (
+                <Col md={4} sm={6} className={"pb-2"}>
+                  <p className="bold">{near.category}</p>
+                  <ul>
+                    {near.details.map(item => {
+                      return <li>{item.detail}</li>
+                    })}
+                  </ul>
+                </Col>
+              )
+            })}
+          </Row>
+          <hr />
+          <Subtitle text="House rules:" />
+          <Row>
+            {houseRules.map((rule, i) => {
+              return (
+                <Col md={4} sm={6} className={"pb-2"}>
+                  <p className="bold">{rule.house_rule}</p>
+                  <ul>
+                    {rule.details.map(item => {
+                      return <li>{item.detail}</li>
+                    })}
+                  </ul>
+                </Col>
+              )
+            })}
+          </Row>
+        </Container>
+      </ContentWithMargin>
     </Layout>
   )
 }

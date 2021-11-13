@@ -1,54 +1,62 @@
 import { graphql, Link } from "gatsby"
-import React from "react"
+import React, { useEffect } from "react"
 import Layout from "../components/layout"
 
 import { Button, Col, Container, Row } from "react-bootstrap"
 import SectionTitle from "../components/sectionTitle"
 import Subtitle from "../components/subtitle"
 
-//import { Calendar, momentLocalizer } from "react-big-calendar"
-import moment from "moment-timezone"
 import Spacer from "../components/spacer"
+import ContentWithMargin from "../components/contentWithMargin"
+import { Helmet } from "react-helmet"
+
+import FullCalendar from "@fullcalendar/react" // must go before plugins
+import dayGridPlugin from "@fullcalendar/daygrid" // a plugin!
+import googleCalendarPlugin from "@fullcalendar/google-calendar"
 
 const Bookings = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+  const apiKey = process.env.GOOGLE_CAL_API
 
-  //const bookings = data.allCalendar.edges[0].node.childrenCalendarEvent
-
-  moment.tz.setDefault("GMT")
-
-  //const localizer = momentLocalizer(moment)
   return (
     <Layout>
-      <Container className={"pt-4"}>
-        <SectionTitle title="Booking information" />
-        <div className="text-center">
-          <Button className={"button"} href="/contact" size="lg">
-            BOOK NOW
-          </Button>
-        </div>
+      <ContentWithMargin>
+        <Container className={"pt-4"}>
+          <SectionTitle title="Booking information" />
+          <div className="text-center">
+            <Button className={"button"} href="/contact" size="lg">
+              BOOK NOW
+            </Button>
+          </div>
 
-        <Row>
-          <Col>
-            <Subtitle text="Availability:" />
-            <p>
-              {content.booking_info} <Link to={"/contact"}>contact us</Link>
-            </p>
-            <Spacer size={"medium"} />
-            <div className={"text-center"}>
-              {/* <Calendar
-                localizer={localizer}
-                views={["month"]}
-                events={bookings}
-                startAccessor={booking => moment(booking.start.dateTime)}
-                endAccessor={booking => moment(booking.end.dateTime)}
-                style={{ height: 500 }}
-              /> */}
-              <Spacer size={"large"} />
-            </div>
-          </Col>
-        </Row>
-      </Container>
+          <Row>
+            <Col>
+              <Subtitle text="Availability:" />
+              <p>
+                {content.booking_info} <Link to={"/contact"}>contact us</Link>
+              </p>
+              <Spacer size={"medium"} />
+              <div className={"text-center"}>
+                <FullCalendar
+                  plugins={[dayGridPlugin, googleCalendarPlugin]}
+                  initialView="dayGridMonth"
+                  dayHeaderClassNames={"customDates"}
+                  googleCalendarApiKey={apiKey}
+                  events={{
+                    googleCalendarId:
+                      "trpnc55gk43d2onm08rt90nbmnh2uv9t@import.calendar.google.com",
+                  }}
+                  displayEventTime={false}
+                  eventDisplay={"block"}
+                  eventTextColor={"#4c7796"}
+                  eventColor={"#4c7796"}
+                />
+                <Spacer size={"large"} />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </ContentWithMargin>
     </Layout>
   )
 }
@@ -56,22 +64,6 @@ const Bookings = ({ data, location }) => {
 export default Bookings
 export const availQuery = graphql`
   query {
-    # allCalendar {
-    #   edges {
-    #     node {
-    #       childrenCalendarEvent {
-    #         summary
-    #         start {
-    #           dateTime
-    #         }
-    #         end {
-    #           dateTime
-    #         }
-    #       }
-    #       summary
-    #     }
-    #   }
-    # }
     allFile(
       filter: {
         sourceInstanceName: { eq: "content" }

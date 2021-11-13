@@ -72,6 +72,22 @@
   line-height: var(--lineHeight-relaxed);
 }
 
+.fc-toolbar-title {
+  font-size: var(--fontSize-3) !important;
+  font-weight: 300;
+  line-height: var(--lineHeight-relaxed);
+}
+
+.fc .fc-col-header-cell-cushion,
+.fc .fc-daygrid-day-number {
+  color: var(--color-accent) !important;
+}
+
+.bannerImg {
+  width: "100%";
+  height: 350px;
+}
+
 .pill {
   border: #1a202c 1px solid;
   border-radius: 10px;

@@ -35,6 +35,9 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -42,28 +45,6 @@ module.exports = {
         name: "images",
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content`,
-        name: `content`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/content`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`,
-      },
-    },
-    `gatsby-plugin-image`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -96,8 +77,29 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content`,
+        name: `content`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/content`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
@@ -113,19 +115,6 @@ module.exports = {
     },
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-source-google-calendar`,
-    //   options: {
-    //     calendarIds: [
-    //       "trpnc55gk43d2onm08rt90nbmnh2uv9t@import.calendar.google.com",
-    //     ],
-    //     // options to retrieve the next 10 upcoming events
-    //     timeMin: new Date().toISOString(),
-    //     maxResults: 10,
-    //     singleEvents: true,
-    //     orderBy: "startTime",
-    //   },
-    // },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
