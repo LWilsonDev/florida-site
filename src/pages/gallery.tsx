@@ -13,7 +13,7 @@ const MyPage = ({ data }) => {
   }))
   // `images` is an array of objects with `thumb` and `full`
   return (
-    <Layout>
+    <Layout title="Gallery">
       <ContentWithMargin>
         <Spacer size="medium" />
         <SectionTitle title="Gallery" />

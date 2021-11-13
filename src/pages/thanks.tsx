@@ -6,9 +6,9 @@ import Layout from "../components/layout"
 import SectionTitle from "../components/sectionTitle"
 import Contact from "./contact"
 
-const Thanks = ({ data, location }) => {
+const Thanks = () => {
   return (
-    <Layout>
+    <Layout title="Thanks">
       <ContentWithMargin>
         <SectionTitle title="Thanks!" />
         <Container className={"text-center"}>

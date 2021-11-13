@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Family Disney Escape`,
-    description: `Family friendly holiday apartment in Florida for the perfect Disney getaway`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    title: `A Family Disney Escape`,
+    description: `Family-friendly luxury holiday apartment with private pool and spa in West Haven, Florida for the perfect Disney getaway`,
+    siteUrl: `https://afamilydisneyescape.com`,
     menuLinks: [
       {
         name: "Home",

@@ -6,7 +6,7 @@ import SectionTitle from "../components/sectionTitle"
 
 const Contact = ({ data, location }) => {
   return (
-    <Layout>
+    <Layout title="Contact">
       <ContentWithMargin>
         <SectionTitle title="Contact us" />
         <Row className={"justify-content-md-center"}>

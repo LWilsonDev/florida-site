@@ -17,7 +17,7 @@ const Overview = ({ data, location }) => {
   const nearby = content.nearby
 
   return (
-    <Layout>
+    <Layout title="Overview">
       <ContentWithMargin>
         <Container className={"pt-4"}>
           <SectionTitle title="Overview" />

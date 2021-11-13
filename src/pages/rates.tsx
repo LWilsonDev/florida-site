@@ -17,7 +17,7 @@ const Rates = ({ data, location }) => {
   const rates = content.rates
 
   return (
-    <Layout>
+    <Layout title="Rates">
       <ContentWithMargin>
         <Container className={"pt-4"}>
           <SectionTitle title="Rates" />

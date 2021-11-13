@@ -63,10 +63,5 @@ _Netlify for hosting_
 
 _Gatsby JS_
 
-- I think next time round I will not start with a template starter - it was sometimes difficult to know how to override certain things. For example there is still some 'mystery css' coming from somewhere that is making me resort to using !important at times to override it, which is not ideal at all. Next time round I will set up my own SCSS
 - Typescript: Gatsby comes with TS support out of the box, which is nice, although I think next time I will make more of an effort to enforce it. I would definitely like to Type-safe my graphQL queries for example
 - The image handling is excellent - but was not seamless to get up and running, as there are some quirks about how things need to be configured which wasn't clear in the docs
-
-_TODO_
-
-- Accessibility: I need to add meaningful alt text for images - especially ones added via the CMS.

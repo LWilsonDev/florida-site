@@ -5,8 +5,9 @@ import Header from "./header"
 import { Container } from "react-bootstrap"
 import Footer from "./footer"
 import Spacer from "./spacer"
+import SEO from "./seo"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, title }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -24,7 +25,7 @@ const Layout = ({ children }) => (
     render={data => (
       <React.Fragment>
         <div id="page-container">
-          <Helmet title={"title"}></Helmet>
+          <SEO title={"title"} />
           <Header
             menuLinks={data.site.siteMetadata.menuLinks}
             siteTitle={data.site.siteMetadata.title}

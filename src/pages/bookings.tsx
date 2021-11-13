@@ -19,7 +19,7 @@ const Bookings = ({ data, location }) => {
   const apiKey = process.env.GOOGLE_CAL_API
 
   return (
-    <Layout>
+    <Layout title="Bookings">
       <ContentWithMargin>
         <Container className={"pt-4"}>
           <SectionTitle title="Booking information" />

@@ -7,6 +7,7 @@ import Hr from "../components/hr"
 import { Container, Row, Col } from "react-bootstrap"
 import AtAGlance from "../components/atAGlance"
 import ContentWithMargin from "../components/contentWithMargin"
+import SEO from "../components/seo"
 
 const BANNER_HEIGHT = 500
 
@@ -18,7 +19,7 @@ const Index = ({ data, location }) => {
   const img3 = content.image_3.childImageSharp.gatsbyImageData
 
   return (
-    <Layout>
+    <Layout title="Home">
       <Container
         fluid
         style={{ maxHeight: BANNER_HEIGHT, overflow: "hidden", padding: 0 }}
