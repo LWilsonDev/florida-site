@@ -63,6 +63,7 @@ nearby:
       - detail: Restaurants & Bars (2 miles)
       - detail: Shopping Mall (4 miles)
       - detail: Designer Outlet (15 miles)
+      - detail: Pharmacy (1.5 miles)
 house_rules:
   - house_rule: Not Permitted
     details:
