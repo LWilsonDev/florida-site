@@ -1,5 +1,5 @@
 import { graphql } from "gatsby"
-import React from "react"
+import React, { useEffect } from "react"
 
 import Gallery from "@browniebroke/gatsby-image-gallery"
 import Layout from "../components/layout"
@@ -11,6 +11,9 @@ const MyPage = ({ data }) => {
   const images = data.images.edges.map(({ node }) => ({
     ...node.childImageSharp,
   }))
+  useEffect(() => {
+    console.log(images)
+  }, [])
   // `images` is an array of objects with `thumb` and `full`
   return (
     <Layout title="Gallery">
@@ -26,7 +29,7 @@ const MyPage = ({ data }) => {
 
 export const pageQuery = graphql`
   query ImagesForGallery {
-    images: allFile {
+    images: allFile(sort: { fields: [base], order: ASC }) {
       edges {
         node {
           childImageSharp {

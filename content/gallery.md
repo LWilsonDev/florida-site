@@ -3,14 +3,14 @@ templateKey: gallery
 galleryImages:
   - /img/picture-0.png
   - /img/picture-01.png
-  - /img/picture-3.png
-  - /img/picture-4.png
-  - /img/picture-5.png
-  - /img/picture-5a.png
-  - /img/picture-6.png
-  - /img/picture-7.png
-  - /img/picture-8.png
-  - /img/picture-9.png
+  - /img/picture-03.png
+  - /img/picture-04.png
+  - /img/picture-05.png
+  - /img/picture-05a.png
+  - /img/picture-06.png
+  - /img/picture-07.png
+  - /img/picture-08.png
+  - /img/picture-09.png
   - /img/picture-10.png
   - /img/picture-11.png
   - /img/picture-12.png

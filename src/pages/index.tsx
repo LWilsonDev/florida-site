@@ -7,9 +7,8 @@ import Hr from "../components/hr"
 import { Container, Row, Col } from "react-bootstrap"
 import AtAGlance from "../components/atAGlance"
 import ContentWithMargin from "../components/contentWithMargin"
-import SEO from "../components/seo"
 
-const BANNER_HEIGHT = 500
+const BANNER_HEIGHT = 520
 
 const Index = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
@@ -66,7 +65,7 @@ const Index = ({ data, location }) => {
                 alt={"Florida apartment"}
               />
             </Col>
-            <Col className="mt-4 mb-2" lg={6}>
+            <Col className="mt-4 mb-4" lg={6}>
               <p className={"mb-4"}>{content.intro_3}</p>
               <p className={"mb-4"}>{content.intro_4}</p>
             </Col>
