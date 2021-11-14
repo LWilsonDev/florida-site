@@ -35,8 +35,8 @@ intro_5: The Manor community is a welcoming environment and offers a communal
   walk of the property.
 intro_6: We hope the memories you make whilst guests at our villa stay with you
   for a lifetime.
-image_1: /img/front_1.jpeg
-image_2: /img/capture25.png
+image_1: /img/picture-0.png
+image_2: /img/picture-3.png
 date: 2015-05-01T22:12:03.284Z
-image_3: /img/capture24.png
+image_3: /img/picture-15.png
 ---
