@@ -47,7 +47,7 @@ nearby:
     details:
       - detail: Disney World
       - detail: Universal Studios
-      - detail: Seaworld
+      - detail: SeaWorld
       - detail: Busch Gardens
       - detail: Kennedy Space Centre
   - category: Other Attractions
