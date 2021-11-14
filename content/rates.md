@@ -12,7 +12,7 @@ rates:
     nightly: $140
   - season: Spring 2022
     start: 1st Feb
-    end: 31st March
+    end: 31st Mar
     nightly: $180
   - season: Spring Holiday 2022
     start: 1st Apr
