@@ -30,13 +30,13 @@ intro_4: "We try to help make the journey as hassle-free as possible for young
   families. A travel cot and high-chair are both available free of charge. The
   pool has a removable child security fence available and every rear door is
   fitted with a pool alarm that is activated when opened. "
-intro_5:
-  "The Manor community is a welcoming environment and offers a communal swimming
-  pool, tennis court and children’s playground – all within a short walk of the
-  property."
-intro_6: "We hope the memories you make whilst guests at our villa stay with you for a lifetime."
+intro_5: The Manor community is a welcoming environment and offers a communal
+  swimming pool, tennis court and children’s playground – all within a short
+  walk of the property.
+intro_6: We hope the memories you make whilst guests at our villa stay with you
+  for a lifetime.
 image_1: /img/front_1.jpeg
-image_2: /img/capture33.png
+image_2: /img/capture25.png
 date: 2015-05-01T22:12:03.284Z
 image_3: /img/capture24.png
 ---
