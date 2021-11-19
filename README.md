@@ -7,7 +7,9 @@ The owners wanted to be able to showcase their property, and allow potential gue
 This is a Gatsby JS website, with Netlify CMS for easy maintenance and non-coding content management.
 It was kicked off with the [Gastby starter blog](https://github.com/gatsbyjs/gatsby-starter-blog) to help easily configure the Netlify CMS.
 
-I chose to try Gatsby JS for this project as I wanted the performance benefits of Gatsby's image rendering plugins, as well as the excellent integration with Netlify for hassle-free hosting. I also wanted to try Netlify's CMS as I knew the property owners would appreciate being able to update their content in their own time. I felt that Netlify CMS had some benefits over other traditional CMS such as cost and simplicity. The admin area interface is perhaps a bit limiting, but with a fairly small site such as this, I thought it would be fine for our needs, and would hopefully be simple to learn for the client.
+I chose Gatsby JS for this project as I wanted the performance benefits of Gatsby's image rendering plugins, as well as the excellent integration with Netlify for hassle-free hosting. I also wanted to try Netlify's CMS as I knew the property owners would appreciate being able to update their content in their own time. I felt that Netlify CMS had some benefits over other traditional CMS such as cost and simplicity. The admin area interface is perhaps a bit limiting, but with a fairly small site such as this, I thought it would be fine for our needs, and would hopefully be simple to learn for the client.
+
+The site is [currently live](https://www.afamilydisneyescape.com/) - although the images are placeholders while the owners get newer shots taken. Some of the current images are not high quality enough, particulary for the full-width banner on larger screens
 
 ### Features
 
@@ -32,16 +34,10 @@ I chose to try Gatsby JS for this project as I wanted the performance benefits o
 
 To run locally, clone repo and ensure Gatsby CLI is set up. Then run `gatsby develop`
 
-Setting up Google Calendar is best done by following the instructions at [gatsby-source-google-calendar](https://www.gatsbyjs.com/plugins/gatsby-source-google-calendar/).
-This project also requires a Google developer console project with API keys for maps and calendar
-
-You will need `.env-development` and `.env-production` files with the following keys:
+To enable the integration with a Google Calendar you will need `.env-development` and `.env-production` files with the following keys:
 
 ```
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-GOOGLE_ACCESS_TOKEN=
-GOOGLE_REFRESH_TOKEN=
+GATSBY_GOOGLE_CAL_API=<API KEY>
 
 ```
 
@@ -65,3 +61,4 @@ _Gatsby JS_
 
 - Typescript: Gatsby comes with TS support out of the box, which is nice, although I think next time I will make more of an effort to enforce it. I would definitely like to Type-safe my graphQL queries for example
 - The image handling is excellent - but was not seamless to get up and running, as there are some quirks about how things need to be configured which wasn't clear in the docs
+  - I ran into some issues where I was trying to pass an image to a child component via it's prop. I wanted to be able to source the image file from netlify CMS and pass it to my layout via a prop to use as a banner image. This caused some inconsistent errors and build failures. In the end I swapped to hard coding the file name - this is not great and is something I need to fix.
