@@ -27,12 +27,12 @@ intro_3: "The 4-bedroom, 3-bathroom property boasts two generous owner’s bedro
   the indoor and outdoor dining areas comfortably seat eight people and a BBQ is
   available. "
 intro_4: "We try to help make the journey as hassle-free as possible for young
-  families. A stroller, baby monitor, travel cot and high-chair are all
-  available free of charge. The pool has a removable child security fence
-  available and every rear door is fitted with a pool alarm that is activated
-  when opened. "
-intro_5: The Manor community is a welcoming environment and offers a tennis
-  court and children’s playground – all within a short walk of the property.
+  families. A stroller, travel cot, baby monitor and high-chair are all
+  available free of charge. The pool area has a removable child security fence
+  available and every rear door is fitted with a pool alarm that activates when
+  opened. "
+intro_5: The Manor is a welcoming community which includes a tennis court and
+  children’s playground – both located a short walk from the property.
 intro_6: We hope the memories you make whilst guests at our villa stay with you
   for a lifetime.
 image_1: /img/picture-0.png
