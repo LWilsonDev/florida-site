@@ -15,8 +15,8 @@ galleryImages:
   - /img/picture-11.png
   - /img/picture-12.png
   - /img/picture-13.png
-  - /img/picture-14.png
-  - /img/picture-15.png
+  - /img/picture-14.jpg
+  - /img/picture-15.jpg
   - /img/picture-16.png
   - /img/picture-17.png
   - /img/picture-18.png
