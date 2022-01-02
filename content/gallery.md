@@ -15,7 +15,6 @@ galleryImages:
   - /img/picture-13.png
   - /img/picture-14.jpg
   - /img/picture-15.jpg
-  - /img/picture-16.png
   - /img/picture-17.png
   - /img/picture-18.png
   - /img/picture-19.png
@@ -32,5 +31,6 @@ galleryImages:
   - /img/picture-31.png
   - /img/picture-32.png
   - /img/picture-35.jpg
+  - /img/picture-01.png
 date: 2015-05-01T22:12:03.284Z
 ---
