@@ -15,8 +15,8 @@ intro_2: "On arrival you will love its front elevation framed by lush tropical
   landscaping and fresh brickwork paving. A large open plan living area is
   styled with vaulted ceilings and opens onto a spectacular outdoor oasis. The
   outdoor area overlooks a wonderful conservation area; perfect for relaxation
-  and highly private. The garage is setup as a games room featuring a pool
-  table, air hockey table, cycling machine and bar area. "
+  and highly private. The garage is setup as a sports bar/games room featuring a
+  pool table, air hockey table, cycling machine and bar area. "
 intro_3: "The 4-bedroom, 3-bathroom property boasts two generous owner’s bedroom
   suites featuring king-sized beds, en-suite bathrooms with dual vanity units
   and direct pool access. The third and fourth bedrooms are themed twins and
@@ -27,16 +27,16 @@ intro_3: "The 4-bedroom, 3-bathroom property boasts two generous owner’s bedro
   the indoor and outdoor dining areas comfortably seat eight people and a BBQ is
   available. "
 intro_4: "We try to help make the journey as hassle-free as possible for young
-  families. A travel cot and high-chair are both available free of charge. The
-  pool has a removable child security fence available and every rear door is
-  fitted with a pool alarm that is activated when opened. "
-intro_5: The Manor community is a welcoming environment and offers a communal
-  swimming pool, tennis court and children’s playground – all within a short
-  walk of the property.
+  families. A stroller, baby monitor, travel cot and high-chair are all
+  available free of charge. The pool has a removable child security fence
+  available and every rear door is fitted with a pool alarm that is activated
+  when opened. "
+intro_5: The Manor community is a welcoming environment and offers a tennis
+  court and children’s playground – all within a short walk of the property.
 intro_6: We hope the memories you make whilst guests at our villa stay with you
   for a lifetime.
 image_1: /img/picture-0.png
 image_2: /img/picture-03.png
 date: 2015-05-01T22:12:03.284Z
-image_3: /img/picture-15.png
+image_3: /img/picture-14.jpg
 ---
