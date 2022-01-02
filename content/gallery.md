@@ -31,7 +31,6 @@ galleryImages:
   - /img/picture-27.jpeg
   - /img/picture-28.jpeg
   - /img/picture-29.png
-  - /img/picture-30.png
   - /img/picture-31.png
   - /img/picture-32.png
 date: 2015-05-01T22:12:03.284Z
