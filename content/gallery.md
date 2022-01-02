@@ -2,10 +2,8 @@
 templateKey: gallery
 galleryImages:
   - /img/picture-0.png
-  - /img/picture-01.png
   - /img/picture-03.png
   - /img/picture-04.png
-  - /img/picture-05.png
   - /img/picture-05a.png
   - /img/picture-06.png
   - /img/picture-07.png
@@ -33,5 +31,6 @@ galleryImages:
   - /img/picture-29.png
   - /img/picture-31.png
   - /img/picture-32.png
+  - /img/picture-35.jpg
 date: 2015-05-01T22:12:03.284Z
 ---
