@@ -20,10 +20,10 @@ intro_3: "The 4-bedroom, 3-bathroom property boasts two generous owner’s bedro
   suites featuring king-sized beds, en-suite bathrooms with dual vanity units &
   direct pool access. The third and fourth bedrooms are themed twins and share
   the third bathroom, which also offers access from the pool area. Key features
-  include 6 smart Roku TVs (full cable, Netflix/Disney etc, one outside),
-  complimentary Wi-Fi throughout, a kitchen featuring Corian surfaces and
-  washer/dryer facilities. Both the indoor and outdoor dining areas comfortably
-  seat eight people and a BBQ is available. "
+  include A/C & Wi-Fi throughout,  6 smart Roku TVs (full cable, Netflix/Disney
+  etc, one outside), a kitchen featuring Corian surfaces and washer/dryer
+  facilities. Both the indoor and outdoor dining areas comfortably seat eight
+  people and a BBQ is available. "
 intro_4: "We try to help make the journey as hassle-free as possible for young
   families. A stroller, travel cot, baby monitor and high-chair are all
   available free of charge. The pool area has a removable child security fence
