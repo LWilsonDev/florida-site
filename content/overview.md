@@ -19,11 +19,11 @@ amenities:
       - detail: 2 Dual vanity en-suites
       - detail: 1 shared bathroom (with pool access)
       - detail: Oversized baths & walk-in showers
-  - amenity: Laundry
+  - amenity: Facilities
     details:
+      - detail: A/C & Wifi throughout
       - detail: Bedlinen & towels provided
-      - detail: 1 Washing machine
-      - detail: 1 Tumble dryer
+      - detail: 1  Washing machine & Tumble dryer
   - amenity: Kitchen
     details:
       - detail: Stainless steel appliances
