@@ -33,8 +33,8 @@ intro_5: The Manor is a welcoming community which includes a tennis court and
   children’s playground – both located a short walk from the property.
 intro_6: We hope the memories you make whilst guests at our villa stay with you
   for a lifetime.
-image_1: /img/image-3.jpg
-image_2: /img/image-7.jpg
+image_1: /img/image-c.jpg
+image_2: /img/image-g.jpg
 date: 2015-05-01T22:12:03.284Z
-image_3: /img/image-22.jpg
+image_3: /img/image-v.jpg
 ---
