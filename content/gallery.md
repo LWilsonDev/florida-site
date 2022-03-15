@@ -15,7 +15,6 @@ galleryImages:
   - /img/image-m.jpg
   - /img/image-n.jpg
   - /img/image-o.jpg
-  - /img/image-p.jpg
   - /img/image-q.jpg
   - /img/image-r.jpg
   - /img/image-s.jpg
