@@ -20,6 +20,9 @@ const MyPage = ({ data }) => {
       <ContentWithMargin>
         <Spacer size="medium" />
         <SectionTitle title="Gallery" />
+        <p className="lead mb-4 text-center">
+          Click on any image to open up the full gallery view
+        </p>
         <Gallery images={images} />
         <Spacer size="medium" />
       </ContentWithMargin>

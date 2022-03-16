@@ -1,13 +1,11 @@
-import { graphql, StaticQuery } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-import React, { useEffect, useState } from "react"
+import { graphql, Link } from "gatsby"
+import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import MyMapComponent from "../components/googleMap"
 import Layout from "../components/layout"
 import SectionTitle from "../components/sectionTitle"
 import Subtitle from "../components/subtitle"
 import AtAGlance from "../components/atAGlance"
-import OverviewHTMLContent from "../components/overviewHTMLContent"
 import ContentWithMargin from "../components/contentWithMargin"
 
 const Overview = ({ data, location }) => {
@@ -25,6 +23,9 @@ const Overview = ({ data, location }) => {
           <Row>
             <Col>
               <AtAGlance />
+              <div className="mt-2 mb-2 mx-auto">
+                <Link to={"/gallery"}>View image gallery</Link>
+              </div>
             </Col>
           </Row>
           <Subtitle text="Location:" />

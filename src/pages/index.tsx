@@ -8,40 +8,49 @@ import { Container, Row, Col } from "react-bootstrap"
 import AtAGlance from "../components/atAGlance"
 import ContentWithMargin from "../components/contentWithMargin"
 
-const BANNER_HEIGHT = 520
-
 const Index = ({ data, location }) => {
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
-
   const img1 = content.image_1.childImageSharp.gatsbyImageData
   const img2 = content.image_2.childImageSharp.gatsbyImageData
   const img3 = content.image_3.childImageSharp.gatsbyImageData
 
   return (
     <Layout title="Home">
-      <Container
-        fluid
-        style={{ maxHeight: BANNER_HEIGHT, overflow: "hidden", padding: 0 }}
-      >
+      <div style={{ display: "grid" }}>
         <StaticImage
+          style={{
+            gridArea: "1/1",
+          }}
+          layout="fullWidth"
+          aspectRatio={3 / 1}
+          // This is a presentational image, so the alt should be an empty string
+          alt=""
           src="../../static/img/banner.jpg"
-          alt={"Apartment pool"}
-          layout={"fullWidth"}
-          transformOptions={{ fit: "inside" }}
+          formats={["auto", "webp", "avif"]}
         />
-      </Container>
+        <div
+          style={{
+            gridArea: "1/1",
+            position: "relative",
+            placeItems: "center",
+            display: "grid",
+          }}
+        >
+          <div className={" intro colorBg "}>
+            <p className={"prefix"}>{content.prefix}</p>
+            <h1 className={"title"}>{content.title}</h1>
+          </div>
+        </div>
+      </div>
+
       <ContentWithMargin>
-        <div className={"text-center intro "}>
-          <p className={"prefix"}>{content.prefix}</p>
-          <h1 className={"title"}>{content.title}</h1>
-          <Hr />
-          <Row className={"justify-content-md-center"}>
-            <Col md={"8"} lg={"7"}>
+        <Container>
+          <Row className={"justify-content-md-center text-center"}>
+            <Col md={"8"}>
               <h2 className={"mt-4 subtitle"}>{content.subtitle}</h2>
+              <Hr />
             </Col>
           </Row>
-        </div>
-        <Container>
           <Row>
             <Col lg={6}>
               <p className={"mb-4"}>{content.intro_1}</p>

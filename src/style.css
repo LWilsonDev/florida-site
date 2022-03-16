@@ -48,16 +48,28 @@
 }
 
 .intro {
-  margin: 60px auto;
+  margin: 20px;
+  max-width: 60%;
+  padding: 40px;
+  text-align: center;
+}
+.title {
+  font-size: var(--fontSize-7);
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    max-width: 70%;
+    padding: 20px;
+  }
+  .title {
+    font-size: var(--fontSize-5);
+  }
 }
 
 .prefix {
   font-size: var(--fontSize-3);
-  font-weight: 300;
-}
-
-.title {
-  font-size: var(--fontSize-7);
   font-weight: 300;
 }
 
@@ -81,6 +93,10 @@
 .fc .fc-col-header-cell-cushion,
 .fc .fc-daygrid-day-number {
   color: var(--color-accent) !important;
+}
+
+.colorBg {
+  background-color: #e3f2fdcc;
 }
 
 .bannerImg {
