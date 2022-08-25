@@ -7,7 +7,7 @@ location_description: >-
   Champions Gate and a 15 minute drive from Disney’s attractions.
 
 
-  There are several flexible airport options. Orlando International Airport is a 35 minute drive, Tampa International Airport just over 1 hour and Miami approximately a 4 hour drive.
+  There are several flexible airport options. Orlando International Airport is a 35 minute drive, Tampa International Airport just over 1 hour, Melbourne Airport 90 minutes and Miami approximately a 4 hour drive.
 amenities:
   - amenity: Sleeping
     details:
