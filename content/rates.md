@@ -89,7 +89,7 @@ rates:
 ---
 Please note:
 
-* A cleaning fee of $120 will apply in 2022 & $130 in 2023.
+* A cleaning fee of $145 will apply.
 * You will need to add a refundable $250 security deposit.
 * Pool and spa heat can be added to your booking for $30 per night (please note that an additional trip charge of $25 will be added to switch on/off the pool heating outside of your arrival or departure date)
 * BBQ hire can be added to your booking for $70 for the first week (or part week) & $35 for any subsequent weeks. This includes the provision of gas. (Please note that an additional trip charge of $25 will be added to unlock/connect the BBQ outside of your arrival or departure date)
