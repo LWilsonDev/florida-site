@@ -4,12 +4,9 @@ galleryImages:
   - /img/image-a.jpg
   - /img/image-b.jpg
   - /img/image-c.jpg
-  - /img/image-e.jpg
-  - /img/image-f.jpg
   - /img/image-g.jpg
   - /img/image-h.jpg
   - /img/image-i.jpg
-  - /img/image-j.jpg
   - /img/image-k.jpg
   - /img/image-l.jpg
   - /img/image-m.jpg
@@ -40,5 +37,6 @@ galleryImages:
   - /img/image-zp.jpg
   - /img/image-zq.jpg
   - /img/image-zr.jpg
+  - /img/image-e.jpg
 date: 2015-05-01T22:12:03.284Z
 ---
