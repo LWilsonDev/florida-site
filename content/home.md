@@ -2,20 +2,20 @@
 templateKey: home
 prefix: Your perfect
 title: Family Disney Escape
-subtitle: A luxury holiday villa with private pool & spa in West Haven, Florida
-  - for an unforgettable family vacation
+subtitle: A luxury holiday villa with pool & spa in West Haven, Florida - for an
+  unforgettable family vacation
 banner_image: /img/banner.jpg
-intro_1: Luxurious family villa boasting an oversized, private pool & spa which
-  offers sunshine from early till late with no rear neighbours. The property is
-  just 15 minutes from Disney’s attractions and located on the highly desirable
-  Manor at West Haven gated community. It’s just minutes from the restaurants,
-  bars, golf and amenities of bustling, upmarket Champions Gate.
+intro_1: Luxurious family villa boasting an oversized pool & spa which offers
+  sunshine from early till late with no rear neighbours. The property is just 15
+  minutes from Disney’s attractions and located on the highly desirable Manor at
+  West Haven gated community. It’s just minutes from the restaurants, bars, golf
+  and amenities of bustling, upmarket Champions Gate.
 intro_2: "On arrival you will love its front elevation framed by lush tropical
   landscaping and fresh brickwork paving. A large open plan living area is
-  styled with vaulted ceilings and opens onto a spectacular outdoor oasis. The
-  outdoor area overlooks a wonderful conservation area; perfect for relaxation
-  and highly private. The garage is setup as a sports bar/games room featuring a
-  pool table, air hockey table, cycling machine and bar area. "
+  styled with vaulted ceilings and opens onto a large outdoor pool and
+  entertaining space, that is perfect for relaxation. The garage is setup as a
+  sports bar/games room featuring a pool table, air hockey table, cycling
+  machine and bar area. "
 intro_3: "The 4-bedroom, 3-bathroom property boasts two generous owner’s bedroom
   suites featuring king-sized beds, en-suite bathrooms with dual vanity units &
   direct pool access. The third and fourth bedrooms are themed twins and share
