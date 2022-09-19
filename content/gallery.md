@@ -5,7 +5,6 @@ galleryImages:
   - /img/image-b.jpg
   - /img/image-c.jpg
   - /img/image-g.jpg
-  - /img/image-h.jpg
   - /img/image-i.jpg
   - /img/image-k.jpg
   - /img/image-l.jpg
@@ -38,5 +37,6 @@ galleryImages:
   - /img/image-zq.jpg
   - /img/image-zr.jpg
   - /img/image-e.jpg
+  - /img/img-20220915-wa0010.jpg
 date: 2015-05-01T22:12:03.284Z
 ---
