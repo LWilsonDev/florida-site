@@ -32,7 +32,7 @@ amenities:
       - detail: Coffee machine
   - amenity: Entertainment
     details:
-      - detail: Heated pool & spa
+      - detail: Private heated pool & spa
       - detail: Games Room (pool, air hockey, foosball)
       - detail: x7 Roku TVs (one outside)
       - detail: Tennis Court
