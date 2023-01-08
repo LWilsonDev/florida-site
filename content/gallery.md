@@ -35,6 +35,6 @@ galleryImages:
   - /img/image-zp.jpg
   - /img/image-zq.jpg
   - /img/image-zr.jpg
-  - /img/image-e.jpg
+  - /img/img-20220915-wa0010.jpg
 date: 2015-05-01T22:12:03.284Z
 ---
