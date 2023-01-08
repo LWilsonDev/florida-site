@@ -14,13 +14,13 @@ intro_2: "On arrival you will love its front elevation framed by lush tropical
   landscaping and fresh brickwork paving. A large open plan living area is
   styled with vaulted ceilings and opens onto a large outdoor pool and
   entertaining space, that is perfect for relaxation. The garage is setup as a
-  sports bar/games room featuring a pool table, air hockey table, cycling
-  machine and bar area. "
+  sports bar/games room featuring a pool table, air hockey, foosball, TV and bar
+  area. "
 intro_3: "The 4-bedroom, 3-bathroom property boasts two generous owner’s bedroom
   suites featuring king-sized beds, en-suite bathrooms with dual vanity units &
   direct pool access. The third and fourth bedrooms are themed twins and share
   the third bathroom, which also offers access from the pool area. Key features
-  include A/C & Wi-Fi throughout,  6 smart Roku TVs (full cable, Netflix/Disney
+  include A/C & Wi-Fi throughout,  7 smart Roku TVs (full cable, Netflix/Disney
   etc, one outside), a kitchen featuring Corian surfaces and washer/dryer
   facilities. Both the indoor and outdoor dining areas comfortably seat eight
   people and a BBQ is available. "
