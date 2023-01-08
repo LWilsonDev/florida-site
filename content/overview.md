@@ -33,8 +33,8 @@ amenities:
   - amenity: Entertainment
     details:
       - detail: Heated pool & spa
-      - detail: Games Room (pool, air hockey, bar)
-      - detail: x6 Roku TVs (one outside)
+      - detail: Games Room (pool, air hockey, foosball)
+      - detail: x7 Roku TVs (one outside)
       - detail: Tennis Court
   - amenity: Family
     details:
