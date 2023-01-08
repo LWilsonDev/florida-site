@@ -3,7 +3,6 @@ templateKey: gallery
 galleryImages:
   - /img/image-a.jpg
   - /img/image-c.jpg
-  - /img/image-d.jpg
   - /img/image-e.jpg
   - /img/image-f.jpg
   - /img/image-g.jpg
@@ -15,7 +14,6 @@ galleryImages:
   - /img/image-q.jpg
   - /img/image-r.jpg
   - /img/image-t.jpg
-  - /img/image-u.jpg
   - /img/image-v.jpg
   - /img/image-x.jpg
   - /img/image-y.jpg
@@ -30,7 +28,6 @@ galleryImages:
   - /img/image-zm.jpg
   - /img/image-zp.jpg
   - /img/image-zo.jpg
-  - /img/image-l.jpg
   - /img/image-zr.jpg
   - /img/image-zq.jpg
 date: 2015-05-01T22:12:03.284Z
