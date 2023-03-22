@@ -2,14 +2,6 @@
 templateKey: rates
 min_nights: Minimum booking of 5 nights
 rates:
-  - season: Winter 2023
-    start: 2nd Jan
-    end: 28th Feb
-    nightly: $160
-  - season: Spring 2023
-    start: 1st Mar
-    end: 31st Mar
-    nightly: $190
   - season: Spring Holiday 2023
     start: 1st Apr
     end: 23rd Apr
