@@ -2,18 +2,6 @@
 templateKey: rates
 min_nights: Minimum booking of 5 nights
 rates:
-  - season: Spring Holiday 2023
-    start: 1st Apr
-    end: 23rd Apr
-    nightly: $240
-  - season: Spring 2023
-    start: 24th Apr
-    end: 30th Jun
-    nightly: $200
-  - season: Summer 2023
-    start: 1st Jul
-    end: 31st Aug
-    nightly: $220
   - season: Fall 2023
     start: 1st Sept
     end: 30th Sept
@@ -82,13 +70,49 @@ rates:
     start: 18 Dec
     end: 01 Jan
     nightly: $240
+  - season: Winter 2025
+    start: 02 Jan
+    end: 28 Feb
+    nightly: $170
+  - season: Spring 2025
+    start: 01 Mar
+    end: 28 Mar
+    nightly: $190
+  - season: Spring Holiday 2025
+    start: 29 Mar
+    end: 21 Apr
+    nightly: $250
+  - season: Spring 2025
+    start: 22 Apr
+    end: 30 Jun
+    nightly: $200
+  - season: Summer 2025
+    start: 01 Jul
+    end: 31 Aug
+    nightly: $230
+  - season: Fall 2025
+    start: 01 Sep
+    end: 30 Sep
+    nightly: $175
+  - season: Mid 2025
+    start: 01 Oct
+    end: 31 Oct
+    nightly: $190
+  - season: Low 2025
+    start: 01 Nov
+    end: 17 Dec
+    nightly: $170
+  - season: Winter Holiday 2025
+    start: 18 Dec
+    end: 01 Jan
+    nightly: $250
 ---
 Please note:
 
 * We may be able to offer a discount for stays over 14 days, please contact us for a personalised quote.
-* A cleaning fee of $145 will apply.
+* A cleaning fee of $145 ($160 from 2025) will apply.
 * You will need to add a refundable $250 security deposit.
-* Pool and spa heat can be added to your booking for $30 per night (please note that an additional trip charge of $35 will be added to switch on/off the pool heating outside of your arrival or departure date)
+* Pool and spa heat can be added to your booking for $30 per night, ($35 per night from 2025). Please note that an additional trip charge of $35 will be added to switch on/off the pool heating outside of your arrival or departure date.
 * BBQ hire can be added to your booking for $70 for the first week (or part week) & $30 for any subsequent weeks. This includes the provision of gas. (Please note that an additional trip charge of $35 will be added to unlock/connect the BBQ outside of your arrival or departure date)
 * Extras such as welcome packs can be added for a small additional fee. Please ask for details.
 * Early check in and late check out may be available upon request; fees may apply.
