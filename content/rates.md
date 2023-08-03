@@ -76,14 +76,14 @@ rates:
     nightly: $170
   - season: Spring 2025
     start: 01 Mar
-    end: 28 Mar
+    end: 27 Mar
     nightly: $190
   - season: Spring Holiday 2025
-    start: 29 Mar
-    end: 21 Apr
+    start: 28 Mar
+    end: 23 Apr
     nightly: $250
   - season: Spring 2025
-    start: 22 Apr
+    start: 24 Apr
     end: 30 Jun
     nightly: $200
   - season: Summer 2025
@@ -110,7 +110,7 @@ rates:
 Please note:
 
 * We may be able to offer a discount for stays over 14 days, please contact us for a personalised quote.
-* A cleaning fee of $145 ($160 from 2025) will apply.
+* A cleaning fee of $160 ($165 from 2025) will apply. 
 * You will need to add a refundable $250 security deposit.
 * Pool and spa heat can be added to your booking for $30 per night, ($35 per night from 2025). Please note that an additional trip charge of $35 will be added to switch on/off the pool heating outside of your arrival or departure date.
 * BBQ hire can be added to your booking for $70 for the first week (or part week) & $30 for any subsequent weeks. This includes the provision of gas. (Please note that an additional trip charge of $35 will be added to unlock/connect the BBQ outside of your arrival or departure date)
