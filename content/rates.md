@@ -1,31 +1,7 @@
 ---
 templateKey: rates
-min_nights: Minimum booking of 5 nights
+min_nights: Minimum booking of 7 nights
 rates:
-  - season: Fall 2023
-    start: 1st Sept
-    end: 30th Sept
-    nightly: $170
-  - season: Mid 2023
-    start: 1st Oct
-    end: 31st Oct
-    nightly: $190
-  - season: Low 2023
-    start: 1st Nov
-    end: 19th Nov
-    nightly: $175
-  - season: Thanksgiving 2023
-    start: 20th Nov
-    end: 26th Nov
-    nightly: $220
-  - season: Fall/Winter 2023
-    start: 27th Nov
-    end: 17th Dec
-    nightly: $175
-  - season: Winter Holiday 2023
-    start: 18th Dec
-    end: 1st Jan
-    nightly: $240
   - season: Winter 2024
     start: 02 Jan
     end: 28 Feb
@@ -36,16 +12,16 @@ rates:
     nightly: $190
   - season: Spring Holiday 2024
     start: 23 Mar
-    end: 24 Apr
+    end: 08 Apr
     nightly: $240
   - season: Spring 2024
-    start: 25 Apr
+    start: 09 Apr
     end: 30 Jun
-    nightly: $200
+    nightly: $190
   - season: Summer 2024
     start: 01 Jul
     end: 31 Aug
-    nightly: $220
+    nightly: $200
   - season: Fall 2024
     start: 01 Sep
     end: 30 Sep
@@ -53,19 +29,15 @@ rates:
   - season: Mid 2024
     start: 01 Oct
     end: 31 Oct
-    nightly: $190
+    nightly: $180
   - season: Low 2024
     start: 01 Nov
-    end: 22 Nov
-    nightly: $175
-  - season: Thanksgiving 2024
-    start: 23 Nov
     end: 30 Nov
-    nightly: $220
+    nightly: $170
   - season: Winter 2024
     start: 01 Dec
     end: 17 Dec
-    nightly: $175
+    nightly: $160
   - season: Winter Holiday 2024
     start: 18 Dec
     end: 01 Jan
@@ -73,15 +45,15 @@ rates:
   - season: Winter 2025
     start: 02 Jan
     end: 28 Feb
-    nightly: $170
+    nightly: $160
   - season: Spring 2025
     start: 01 Mar
     end: 27 Mar
-    nightly: $190
+    nightly: $175
   - season: Spring Holiday 2025
     start: 28 Mar
     end: 23 Apr
-    nightly: $250
+    nightly: $230
   - season: Spring 2025
     start: 24 Apr
     end: 30 Jun
