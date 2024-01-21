@@ -29,8 +29,12 @@ intro_4: "We try to help make the journey as hassle-free as possible for young
   available free of charge. The pool area has a removable child security fence
   available and every rear door is fitted with a pool alarm that activates when
   opened. "
-intro_5: The Manor is a welcoming community which includes a tennis court and
+intro_5: >-
+  The Manor is a welcoming community which includes a tennis court and
   children’s playground – both located a short walk from the property.
+
+
+  Licence Number: DWE6316241.
 intro_6: We hope the memories you make whilst guests at our villa stay with you
   for a lifetime.
 image_1: /img/image-c.jpg
