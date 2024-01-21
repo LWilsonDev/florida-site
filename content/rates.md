@@ -82,7 +82,7 @@ rates:
 Please note:
 
 * We may be able to offer a discount for stays over 14 days, please contact us for a personalised quote.
-* A cleaning fee of $160 ($165 from 2025) will apply. 
+* A cleaning fee of $165 will apply. 
 * You will need to add a refundable $250 security deposit.
 * Pool and spa heat can be added to your booking for $35 per night. Please note that an additional trip charge of $35 will be added to switch on/off the pool heating outside of your arrival or departure date.
 * BBQ hire can be added to your booking for $75. This includes the provision of gas. (Please note that an additional trip charge of $35 will be added to unlock/connect the BBQ outside of your arrival or departure date)
