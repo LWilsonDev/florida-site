@@ -7,7 +7,7 @@ subtitle: A luxury holiday villa with pool & spa in West Haven, Florida - for an
 banner_image: /img/banner.jpg
 intro_1: Luxurious family villa boasting an oversized private pool & spa which
   offers sunshine from early till late with no rear neighbours. The property is
-  just 15 minutes from Disney’s attractions and located on the highly desirable
+  just 15 miles from Disney’s attractions and located on the highly desirable
   Manor at West Haven gated community. It’s just minutes from the restaurants,
   bars, golf and amenities of bustling, upmarket Champions Gate.
 intro_2: "On arrival you will love its front elevation framed by lush tropical
@@ -40,5 +40,5 @@ intro_6: We hope the memories you make whilst guests at our villa stay with you
 image_1: /img/image-c.jpg
 image_2: /img/image-g.jpg
 date: 2015-05-01T22:12:03.284Z
-image_3: /img/image-v.jpg
+image_3: /img/image-x.jpg
 ---
