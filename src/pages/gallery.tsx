@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SectionTitle from "../components/sectionTitle"
 import Spacer from "../components/spacer"
 import ContentWithMargin from "../components/contentWithMargin"
+import { Button } from "react-bootstrap"
 
 const MyPage = ({ data }) => {
   const images = data.images.edges.map(({ node }) => ({
@@ -20,6 +21,15 @@ const MyPage = ({ data }) => {
       <ContentWithMargin>
         <Spacer size="medium" />
         <SectionTitle title="Gallery" />
+        <div className="text-center mb-4">
+          <Button
+            className={"button"}
+            href="https://www.vr360homes.com/p7419.html"
+            size="lg"
+          >
+            View virtual 360° tour
+          </Button>
+        </div>
         <p className="lead mb-4 text-center">
           Click on any image to open up the full gallery view
         </p>
