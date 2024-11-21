@@ -24,7 +24,7 @@ const MyPage = ({ data }) => {
         <div className="text-center mb-4">
           <Button
             className={"button"}
-            href="https://www.vr360homes.com/p7419.html"
+            href="https://kuula.co/share/collection/7Z8Ds?logo=-1&info=0&fs=1&vr=1&zoom=1&gyro=0&initload=0&autorotate=0.3&thumbs=3"
             size="lg"
           >
             View virtual 360° tour
