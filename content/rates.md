@@ -17,31 +17,31 @@ rates:
   - season: Spring 2025
     start: 15 Apr
     end: 30 Jun
-    nightly: $190
+    nightly: $175
   - season: Summer 2025
     start: 01 Jul
     end: 31 Aug
-    nightly: $200
+    nightly: $185
   - season: Fall 2025
     start: 01 Sep
     end: 30 Sep
-    nightly: $170
+    nightly: $160
   - season: Mid 2025
     start: 01 Oct
     end: 31 Oct
-    nightly: $180
+    nightly: $170
   - season: Low 2025
     start: 01 Nov
     end: 30 Nov
-    nightly: $170
+    nightly: $160
   - season: Winter 2025
     start: 01 Dec
     end: 17 Dec
-    nightly: $160
+    nightly: $150
   - season: Winter Holiday 2025
     start: 18 Dec
     end: 01 Jan
-    nightly: $240
+    nightly: $225
   - season: Winter 2026
     start: 02 Jan
     end: 28 Feb
@@ -57,23 +57,23 @@ rates:
   - season: Spring 2026
     start: 24 Apr
     end: 30 Jun
-    nightly: $190
+    nightly: $180
   - season: Summer 2026
     start: 01 Jul
     end: 31 Aug
-    nightly: $200
+    nightly: $190
   - season: Fall 2026
     start: 01 Sep
     end: 30 Sep
-    nightly: $175
+    nightly: $170
   - season: Mid 2026
     start: 01 Oct
     end: 31 Oct
-    nightly: $190
+    nightly: $180
   - season: Low 2026
     start: 01 Nov
     end: 17 Dec
-    nightly: $175
+    nightly: $165
   - season: Winter Holiday 2026
     start: 18 Dec
     end: 01 Jan
