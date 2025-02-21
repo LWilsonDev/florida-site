@@ -17,7 +17,7 @@ rates:
   - season: Spring 2025
     start: 15 Apr
     end: 30 Jun
-    nightly: $175
+    nightly: $160
   - season: Summer 2025
     start: 01 Jul
     end: 31 Aug
