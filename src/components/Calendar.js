@@ -13,7 +13,7 @@ const Calendar = () => {
       googleCalendarApiKey={apiKey}
       events={{
         googleCalendarId:
-          "trpnc55gk43d2onm08rt90nbmnh2uv9t@import.calendar.google.com",
+          "nvl0eoolbmau39udgu2p3fq3oh6d03e5@import.calendar.google.com",
       }}
       displayEventTime={false}
       eventDisplay={"block"}
