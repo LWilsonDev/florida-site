@@ -14,12 +14,12 @@ galleryImages:
   - /img/image-m.jpg
   - /img/image-n.jpg
   - /img/image-o.jpg
-  - /img/image-p.jpg
-  - /img/image-q.jpg
-  - /img/image-r.jpg
-  - /img/image-s.jpg
-  - /img/image-t.jpg
-  - /img/image-u.jpg
+  - /img/image-p..jpg
+  - /img/image-q..jpg
+  - /img/image-r..jpg
+  - /img/image-s..jpg
+  - /img/image-t..jpg
+  - /img/image-u..jpg
   - /img/image-v.jpg
   - /img/image-w.jpg
   - /img/image-x.jpg
